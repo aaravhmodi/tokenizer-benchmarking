@@ -1,0 +1,1 @@
+Tokenizer benchmarks need reproducible prose samples with stable punctuation, moderate sentence length, and vocabulary that shifts as topics move from economics to science reporting and contemporary nonfiction.

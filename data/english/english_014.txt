@@ -1,0 +1,1 @@
+A clean English corpus should include declarative sentences, quotations, commas, and named entities so that token boundary behavior is not biased toward trivial text.
