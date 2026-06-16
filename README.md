@@ -44,6 +44,8 @@ scripts/
 paper/
 ```
 
+Project progression is documented in [paper/project_journal.md](C:/Users/upsid/documents/projects/tokenizer%20benchmarking/paper/project_journal.md).
+
 ## Supported tokenizers
 
 - `tiktoken`
