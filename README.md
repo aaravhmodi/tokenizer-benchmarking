@@ -47,12 +47,14 @@ paper/
 ## Supported tokenizers
 
 - `tiktoken`
+- `tiktoken_cached`
 - Hugging Face `tokenizers`
 - SentencePiece
 - custom naive Python tokenizer baseline
 - custom cached Python tokenizer baseline
 
 The project currently treats `tiktoken` as the OpenAI-compatible reference. Exact token ID comparison is only meaningful for tokenizers that intentionally match the same vocabulary and merge behavior.
+`tiktoken_cached` is an exact-compatible optimization prototype that reuses `tiktoken`'s segmentation and single-piece encoding while caching repeated pieces.
 
 ## Installation
 
@@ -147,6 +149,10 @@ The cached adapter adds repeated-substring memoization with LRU eviction. It rep
 - cache hit rate
 
 This is an optimization testbed, not a production-faithful reimplementation of OpenAI BPE.
+
+### Exact-compatible cached baseline
+
+`tiktoken_cached` is the serious optimization path for exactness studies. It preserves `cl100k_base` token IDs by using `tiktoken`'s own regex piece boundaries and `encode_single_piece`, then memoizes repeated pieces with an LRU cache.
 
 ## Limitations
 

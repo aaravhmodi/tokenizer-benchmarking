@@ -17,10 +17,10 @@
   ],
   "trials": 5,
   "batch_size": 8,
-  "max_docs": 8,
+  "max_docs": 32,
   "reference_tokenizer": "tiktoken",
   "pretokenization_comparison": {
-    "regex_mean_parts": 5794.0,
-    "simple_mean_parts": 2969.2258064516127
+    "regex_mean_parts": 313.921875,
+    "simple_mean_parts": 195.15625
   }
 }

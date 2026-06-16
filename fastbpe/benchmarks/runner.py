@@ -11,6 +11,7 @@ from fastbpe.adapters.cached_bpe import CachedPythonBPEAdapter
 from fastbpe.adapters.hf_adapter import HuggingFaceTokenizerAdapter
 from fastbpe.adapters.naive_bpe import NaivePythonBPEAdapter, PretokenizationComparator
 from fastbpe.adapters.sentencepiece_adapter import SentencePieceAdapter
+from fastbpe.adapters.tiktoken_cached_adapter import CachedTikTokenAdapter
 from fastbpe.adapters.tiktoken_adapter import TikTokenAdapter
 from fastbpe.benchmarks.exactness import compare_to_reference
 from fastbpe.benchmarks.memory import measure_memory
@@ -23,6 +24,7 @@ from fastbpe.utils.timing import time_single
 def available_tokenizer_factories(training_corpus: list[str]) -> dict[str, callable]:
     return {
         "tiktoken": lambda: TikTokenAdapter(),
+        "tiktoken_cached": lambda: CachedTikTokenAdapter(),
         "hf": lambda: HuggingFaceTokenizerAdapter(training_corpus=training_corpus),
         "sentencepiece": lambda: SentencePieceAdapter(training_corpus=training_corpus),
         "naive": lambda: NaivePythonBPEAdapter(),

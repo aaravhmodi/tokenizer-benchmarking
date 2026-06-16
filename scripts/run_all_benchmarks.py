@@ -15,7 +15,11 @@ from fastbpe.plots.generate_plots import generate_plots
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run FastBPE tokenizer benchmarks.")
     parser.add_argument("--dataset", nargs="+", default=["all"], help="Dataset domains to benchmark.")
-    parser.add_argument("--tokenizers", nargs="+", default=["tiktoken", "hf", "sentencepiece", "naive", "cached"])
+    parser.add_argument(
+        "--tokenizers",
+        nargs="+",
+        default=["tiktoken", "tiktoken_cached", "hf", "sentencepiece", "naive", "cached"],
+    )
     parser.add_argument("--trials", type=int, default=5)
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--max-docs", type=int, default=64)

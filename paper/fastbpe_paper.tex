@@ -15,7 +15,7 @@
 \maketitle
 
 \begin{abstract}
-This paper reports a reproducible tokenizer benchmark covering throughput, latency, memory, batching, input-length sensitivity, and exactness constraints across English prose, source code, noisy web text, and mixed technical documents. The study compares \texttt{tiktoken}, Hugging Face \texttt{tokenizers}, SentencePiece, and two custom Python baselines. In the current run, \texttt{tiktoken} achieved the highest average throughput at 4.780 MB/s, while the cached Python prototype delivered a 0.98x throughput gain over the naive Python baseline at the cost of higher memory use. Exact token-ID compatibility was not claimed by any non-reference tokenizer in this run, so exactness results are reported as a methodological limitation rather than overstated.
+This paper reports a reproducible tokenizer benchmark covering throughput, latency, memory, batching, input-length sensitivity, and exactness constraints across English prose, source code, noisy web text, and mixed technical documents. The study compares \texttt{tiktoken}, Hugging Face \texttt{tokenizers}, SentencePiece, and two custom Python baselines. In the current run, \texttt{tiktoken} achieved the highest average throughput at 4.735 MB/s, while the cached Python prototype delivered a 1.47x throughput gain over the naive Python baseline at the cost of higher memory use. Exact token-ID compatibility was not claimed by any non-reference tokenizer in this run, so exactness results are reported as a methodological limitation rather than overstated.
 \end{abstract}
 
 \section{Introduction}
@@ -30,9 +30,9 @@ Tokenizer throughput is operationally important in retrieval-augmented generatio
 \end{enumerate}
 
 \section{Methodology}
-The benchmark was executed on Windows-10-10.0.26200-SP0 using Python 3.11.9 on Intel64 Family 6 Model 189 Stepping 1, GenuineIntel. The run used tiktoken, hf, sentencepiece, naive, cached across the domains code, english, technical, web. Each configuration was evaluated for 5 trials with batch size 8 and at most 8 documents per domain. Tokenizers were warmed up before timing, cold-start latency was separated, file I/O was excluded from encode timing, and raw outputs were written to CSV and JSON artifacts.
+The benchmark was executed on Windows-10-10.0.26200-SP0 using Python 3.11.9 on Intel64 Family 6 Model 189 Stepping 1, GenuineIntel. The run used tiktoken, hf, sentencepiece, naive, cached across the domains code, english, technical, web. Each configuration was evaluated for 5 trials with batch size 8 and at most 32 documents per domain. Tokenizers were warmed up before timing, cold-start latency was separated, file I/O was excluded from encode timing, and raw outputs were written to CSV and JSON artifacts.
 
-The current run used persisted synthetic corpora written into \texttt{data/}. Those corpora are intentionally more diverse than the original homogeneous fallback so that caching effects are not dominated by identical repeated documents. A small pre-tokenization comparison indicated a mean of 5794.000 regex segments versus 2969.226 simple segments per document on the sampled training corpus.
+The current run used persisted synthetic corpora written into \texttt{data/}. Those corpora are intentionally more diverse than the original homogeneous fallback so that caching effects are not dominated by identical repeated documents. A small pre-tokenization comparison indicated a mean of 313.922 regex segments versus 195.156 simple segments per document on the sampled training corpus.
 
 \section{Results}
 
@@ -45,11 +45,11 @@ Table~\ref{tab:overall} shows mean performance aggregated by tokenizer. On this 
 \toprule
 tokenizer & mb\_per\_s & tokens\_per\_s & avg\_latency\_ms & peak\_memory\_bytes \\
 \midrule
-tiktoken & 4.780 & 1128600 & 5.9381 & 820522.8 \\
-hf & 2.721 & 886578 & 10.7258 & 645747.0 \\
-sentencepiece & 1.960 & 1095722 & 18.1008 & 1360108.0 \\
-naive & 1.064 & 959050 & 26.7064 & 1586897.6 \\
-cached & 1.038 & 935073 & 23.9989 & 1788541.4 \\
+tiktoken & 4.735 & 1118675 & 0.2269 & 16768.0 \\
+hf & 3.454 & 866205 & 0.3065 & 17920.0 \\
+sentencepiece & 3.294 & 1632086 & 0.3251 & 31781.2 \\
+cached & 2.258 & 2044328 & 0.4977 & 116589.4 \\
+naive & 1.539 & 1391675 & 0.7082 & 38027.2 \\
 \bottomrule
 \end{tabular}
 \caption{Mean performance by tokenizer across all four domains.}
@@ -57,7 +57,7 @@ cached & 1.038 & 935073 & 23.9989 & 1788541.4 \\
 \end{table}
 
 \subsection{Top Configurations}
-The highest-throughput individual configuration was \texttt{tiktoken} on English text at 5.909 MB/s. Table~\ref{tab:topconfigs} lists the strongest individual tokenizer-domain combinations.
+The highest-throughput individual configuration was \texttt{tiktoken} on English text at 5.542 MB/s. Table~\ref{tab:topconfigs} lists the strongest individual tokenizer-domain combinations.
 
 \begin{table}[H]
 \centering
@@ -65,14 +65,14 @@ The highest-throughput individual configuration was \texttt{tiktoken} on English
 \toprule
 tokenizer & domain & mb\_per\_s & tokens\_per\_s & avg\_latency\_ms & peak\_memory\_bytes \\
 \midrule
-tiktoken & technical & 5.909 & 1225606 & 0.2545 & 12927.2 \\
-tiktoken & code & 4.851 & 1144326 & 23.2814 & 3254357.6 \\
-tiktoken & english & 4.644 & 1147160 & 0.1863 & 12651.2 \\
-tiktoken & web & 3.715 & 997306 & 0.0304 & 2155.2 \\
-hf & technical & 3.135 & 917873 & 0.4804 & 16944.0 \\
-hf & english & 2.856 & 989896 & 0.2983 & 16668.0 \\
-hf & code & 2.684 & 660650 & 42.0735 & 2546880.0 \\
-sentencepiece & technical & 2.289 & 1275089 & 0.6595 & 34880.0 \\
+tiktoken & technical & 5.542 & 1106087 & 0.2630 & 14575.2 \\
+tiktoken & code & 4.988 & 1168626 & 0.4092 & 19938.4 \\
+tiktoken & english & 4.784 & 1180900 & 0.1878 & 21719.2 \\
+hf & code & 3.964 & 870806 & 0.5173 & 20040.0 \\
+hf & technical & 3.908 & 838216 & 0.3739 & 16108.0 \\
+sentencepiece & code & 3.784 & 1499303 & 0.5402 & 34436.8 \\
+tiktoken & web & 3.628 & 1019087 & 0.0473 & 10839.2 \\
+sentencepiece & english & 3.516 & 1699931 & 0.2555 & 36656.0 \\
 \bottomrule
 \end{tabular}
 \caption{Top tokenizer-domain configurations by throughput.}
@@ -82,10 +82,10 @@ sentencepiece & technical & 2.289 & 1275089 & 0.6595 & 34880.0 \\
 \subsection{Domain Sensitivity}
 Domain sensitivity was substantial. Table~\ref{tab:domain} reports MB/s by tokenizer and domain. \texttt{tiktoken} led on English, web, and technical text, while SentencePiece led on code. The strongest per-domain configurations were:
 \begin{itemize}
-\item English: \texttt{tiktoken} at 4.644 MB/s
-\item Code: \texttt{tiktoken} at 4.851 MB/s
-\item Web: \texttt{tiktoken} at 3.715 MB/s
-\item Technical: \texttt{tiktoken} at 5.909 MB/s
+\item English: \texttt{tiktoken} at 4.784 MB/s
+\item Code: \texttt{tiktoken} at 4.988 MB/s
+\item Web: \texttt{tiktoken} at 3.628 MB/s
+\item Technical: \texttt{tiktoken} at 5.542 MB/s
 \end{itemize}
 
 \begin{table}[H]
@@ -94,10 +94,10 @@ Domain sensitivity was substantial. Table~\ref{tab:domain} reports MB/s by token
 \toprule
 domain & cached & hf & naive & sentencepiece & tiktoken \\
 \midrule
-code & 1.221 & 2.684 & 1.080 & 1.587 & 4.851 \\
-english & 0.993 & 2.856 & 1.070 & 2.272 & 4.644 \\
-technical & 1.114 & 3.135 & 1.173 & 2.289 & 5.909 \\
-web & 0.824 & 2.207 & 0.934 & 1.694 & 3.715 \\
+code & 2.506 & 3.964 & 1.613 & 3.784 & 4.988 \\
+english & 2.115 & 3.392 & 1.556 & 3.516 & 4.784 \\
+technical & 2.596 & 3.908 & 1.708 & 3.321 & 5.542 \\
+web & 1.815 & 2.553 & 1.278 & 2.555 & 3.628 \\
 \bottomrule
 \end{tabular}
 \caption{Throughput in MB/s by domain and tokenizer.}
@@ -105,7 +105,7 @@ web & 0.824 & 2.207 & 0.934 & 1.694 & 3.715 \\
 \end{table}
 
 \subsection{Caching Optimization}
-The cached Python tokenizer improved throughput from 1.064 MB/s to 1.038 MB/s, a 0.98x speedup in MB/s and a 0.97x speedup in tokens/s relative to the naive baseline. Average latency fell from 26.7064 ms to 23.9989 ms. The gain came with a memory increase from 1586897.6 to 1788541.4 peak bytes on average. The cached baseline recorded a mean cache hit rate of 0.9480 on the persisted synthetic corpora.
+The cached Python tokenizer improved throughput from 1.539 MB/s to 2.258 MB/s, a 1.47x speedup in MB/s and a 1.47x speedup in tokens/s relative to the naive baseline. Average latency fell from 0.7082 ms to 0.4977 ms. The gain came with a memory increase from 38027.2 to 116589.4 peak bytes on average. The cached baseline recorded a mean cache hit rate of 0.9582 on the persisted synthetic corpora.
 
 \begin{table}[H]
 \centering
@@ -113,8 +113,8 @@ The cached Python tokenizer improved throughput from 1.064 MB/s to 1.038 MB/s, a
 \toprule
 tokenizer & mb\_per\_s & tokens\_per\_s & avg\_latency\_ms & peak\_memory\_bytes & cache\_hit\_rate \\
 \midrule
-cached & 1.038 & 935073 & 23.9989 & 1788541.4 & 0.9480 \\
-naive & 1.064 & 959050 & 26.7064 & 1586897.6 & N/A \\
+cached & 2.258 & 2044328 & 0.4977 & 116589.4 & 0.9582 \\
+naive & 1.539 & 1391675 & 0.7082 & 38027.2 & N/A \\
 \bottomrule
 \end{tabular}
 \caption{Naive versus cached Python baselines.}
