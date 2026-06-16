@@ -1,0 +1,423 @@
+{
+  "generated_at_epoch_s": 1781625799,
+  "docs_per_domain": 8,
+  "domains": [
+    "english",
+    "code",
+    "web",
+    "technical"
+  ],
+  "seed": 13,
+  "sources": {
+    "english": [
+      {
+        "path": "english\\0001_pride-and-prejudice-part-1.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 1",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0002_pride-and-prejudice-part-2.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 2",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0003_a-tale-of-two-cities-part-1.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 1",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0004_a-tale-of-two-cities-part-2.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 2",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0005_frankenstein-part-1.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 1",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0006_frankenstein-part-2.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 2",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0007_the-adventures-of-sherlock-holmes-part-1.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 1",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      },
+      {
+        "path": "english\\0008_the-adventures-of-sherlock-holmes-part-2.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 2",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      }
+    ],
+    "code": [
+      {
+        "path": "code\\0001_microsoft-typescript-src-compiler-parser-ts.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts"
+        }
+      },
+      {
+        "path": "code\\0002_pallets-flask-src-flask-app-py.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/pallets/flask/main/src/flask/app.py",
+        "title": "pallets/flask src/flask/app.py",
+        "metadata": {
+          "repo": "pallets/flask",
+          "path": "src/flask/app.py"
+        }
+      },
+      {
+        "path": "code\\0003_eslint-eslint-lib-linter-linter-js.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/eslint/eslint/main/lib/linter/linter.js",
+        "title": "eslint/eslint lib/linter/linter.js",
+        "metadata": {
+          "repo": "eslint/eslint",
+          "path": "lib/linter/linter.js"
+        }
+      },
+      {
+        "path": "code\\0004_psf-requests-src-requests-sessions-py.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/psf/requests/main/src/requests/sessions.py",
+        "title": "psf/requests src/requests/sessions.py",
+        "metadata": {
+          "repo": "psf/requests",
+          "path": "src/requests/sessions.py"
+        }
+      },
+      {
+        "path": "code\\0005_vercel-next-js-packages-next-src-server-base-server-ts.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/vercel/next.js/canary/packages/next/src/server/base-server.ts",
+        "title": "vercel/next.js packages/next/src/server/base-server.ts",
+        "metadata": {
+          "repo": "vercel/next.js",
+          "path": "packages/next/src/server/base-server.ts"
+        }
+      },
+      {
+        "path": "code\\0006_tiangolo-fastapi-fastapi-routing-py.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/tiangolo/fastapi/master/fastapi/routing.py",
+        "title": "tiangolo/fastapi fastapi/routing.py",
+        "metadata": {
+          "repo": "tiangolo/fastapi",
+          "path": "fastapi/routing.py"
+        }
+      },
+      {
+        "path": "code\\0007_facebook-react-packages-react-src-reacthooks-js.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/facebook/react/main/packages/react/src/ReactHooks.js",
+        "title": "facebook/react packages/react/src/ReactHooks.js",
+        "metadata": {
+          "repo": "facebook/react",
+          "path": "packages/react/src/ReactHooks.js"
+        }
+      }
+    ],
+    "web": [
+      {
+        "path": "web\\0001_hn-48545818.txt",
+        "source": "hacker_news",
+        "source_id": "48545818",
+        "title": "HN 48545818",
+        "metadata": {
+          "hn_id": 48545818,
+          "score": 5,
+          "by": "xenophin"
+        }
+      },
+      {
+        "path": "web\\0002_hn-48519198.txt",
+        "source": "hacker_news",
+        "source_id": "48519198",
+        "title": "HN 48519198",
+        "metadata": {
+          "hn_id": 48519198,
+          "score": 18,
+          "by": "ogundipeore"
+        }
+      },
+      {
+        "path": "web\\0003_hn-48487897.txt",
+        "source": "hacker_news",
+        "source_id": "48487897",
+        "title": "HN 48487897",
+        "metadata": {
+          "hn_id": 48487897,
+          "score": 176,
+          "by": "robin_reala"
+        }
+      },
+      {
+        "path": "web\\0004_hn-48471970.txt",
+        "source": "hacker_news",
+        "source_id": "48471970",
+        "title": "HN 48471970",
+        "metadata": {
+          "hn_id": 48471970,
+          "score": 426,
+          "by": "d3Xt3r"
+        }
+      },
+      {
+        "path": "web\\0005_hn-48498385.txt",
+        "source": "hacker_news",
+        "source_id": "48498385",
+        "title": "HN 48498385",
+        "metadata": {
+          "hn_id": 48498385,
+          "score": 785,
+          "by": "sam_bristow"
+        }
+      },
+      {
+        "path": "web\\0006_hn-48555730.txt",
+        "source": "hacker_news",
+        "source_id": "48555730",
+        "title": "HN 48555730",
+        "metadata": {
+          "hn_id": 48555730,
+          "score": 3,
+          "by": "klaussilveira"
+        }
+      },
+      {
+        "path": "web\\0007_hn-48528371.txt",
+        "source": "hacker_news",
+        "source_id": "48528371",
+        "title": "HN 48528371",
+        "metadata": {
+          "hn_id": 48528371,
+          "score": 401,
+          "by": "unrvl22"
+        }
+      },
+      {
+        "path": "web\\0008_hn-48546616.txt",
+        "source": "hacker_news",
+        "source_id": "48546616",
+        "title": "HN 48546616",
+        "metadata": {
+          "hn_id": 48546616,
+          "score": 218,
+          "by": "epistasis"
+        }
+      }
+    ],
+    "technical": [
+      {
+        "path": "technical\\0001_your-privacy-my-cloak-backdoor-attacks-on-differentially-private-federated-learning.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17035v1",
+        "title": "Your Privacy My Cloak: Backdoor Attacks on Differentially Private Federated Learning",
+        "metadata": {
+          "authors": [
+            "Xiaolin Li",
+            "Ning Wang",
+            "Ninghui Li",
+            "Wenhai Sun"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CR"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17035v1"
+        }
+      },
+      {
+        "path": "technical\\0002_filtered-conformal-ellipsoids-for-graph-native-time-series.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17014v1",
+        "title": "Filtered Conformal Ellipsoids for Graph-Native Time Series",
+        "metadata": {
+          "authors": [
+            "Yannick Limmer"
+          ],
+          "categories": [
+            "cs.LG",
+            "math.ST",
+            "stat.ML"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17014v1"
+        }
+      },
+      {
+        "path": "technical\\0003_the-value-axis-language-models-encode-whether-they-re-on-the-right-track.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17056v1",
+        "title": "The Value Axis: Language Models Encode Whether They're on the Right Track",
+        "metadata": {
+          "authors": [
+            "Nick Jiang",
+            "Isaac Kauvar",
+            "Jack Lindsey"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17056v1"
+        }
+      },
+      {
+        "path": "technical\\0004_tokenpilot-cache-efficient-context-management-for-llm-agents.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17016v1",
+        "title": "TokenPilot: Cache-Efficient Context Management for LLM Agents",
+        "metadata": {
+          "authors": [
+            "Buqiang Xu",
+            "Zirui Xue",
+            "Dianmou Chen",
+            "Chenyang Fu",
+            "Chiyu Wu",
+            "Caiying Huang",
+            "Chen Jiang",
+            "Jizhan Fang",
+            "Xinle Deng",
+            "Yijun Chen",
+            "Yunzhi Yao",
+            "Xuehai Wang",
+            "Jin Shang",
+            "Gong Yu",
+            "Ningyu Zhang"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17016v1"
+        }
+      },
+      {
+        "path": "technical\\0005_context-aware-rl-for-agentic-and-multimodal-llms.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17053v1",
+        "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+        "metadata": {
+          "authors": [
+            "Peiyang Xu",
+            "Bangzheng Li",
+            "Sijia Liu",
+            "Karthik R. Narasimhan",
+            "Pramod Viswanath",
+            "Prateek Mittal",
+            "Xingyu Fu"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.CV"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17053v1"
+        }
+      },
+      {
+        "path": "technical\\0006_the-importance-of-phase-in-neural-representations-an-internal-oppenheim-lim-test-of-image-classifiers.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17037v1",
+        "title": "The Importance of Phase in Neural Representations: An Internal Oppenheim-Lim Test of Image Classifiers",
+        "metadata": {
+          "authors": [
+            "Alper Y\u0131ld\u0131r\u0131m"
+          ],
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17037v1"
+        }
+      },
+      {
+        "path": "technical\\0007_benchmarking-llm-agents-on-meta-analysis-articles-from-nature-portfolio.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17041v1",
+        "title": "Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio",
+        "metadata": {
+          "authors": [
+            "Anzhe Xie",
+            "Weihang Su",
+            "Yujia Zhou",
+            "Yiqun Liu",
+            "Qingyao Ai"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.IR"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17041v1"
+        }
+      },
+      {
+        "path": "technical\\0008_deeprubric-evidence-tree-rubric-supervision-for-efficient-reinforcement-learning-of-deep-research-agents.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17029v1",
+        "title": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+        "metadata": {
+          "authors": [
+            "Minghang Zhu",
+            "Chuyang Wei",
+            "Junhao Xu",
+            "Yilin Cheng",
+            "Zhumin Chen",
+            "Jiyan He"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17029v1"
+        }
+      }
+    ]
+  }
+}

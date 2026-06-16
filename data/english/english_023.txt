@@ -1,1 +1,0 @@
-Public-domain style narrative prose remains useful because it mixes dialogue, descriptions, and paragraph structure without the markup noise seen in web archives.

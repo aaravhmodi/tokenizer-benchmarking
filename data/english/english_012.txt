@@ -1,1 +1,0 @@
-Benchmark fairness depends on holding the document set fixed while running repeated trials, separating file I/O from encode time, and recording the environment exactly.

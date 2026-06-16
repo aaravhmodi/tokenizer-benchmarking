@@ -77,11 +77,20 @@ Supported file types include `.txt`, `.md`, `.py`, `.js`, `.ts`, `.json`, and `.
 
 If no real files are present, FastBPE falls back to synthetic corpora so the benchmark pipeline remains runnable end to end.
 For controlled local runs, `scripts/prepare_datasets.py` materializes the synthetic corpora into files under `data/` so the exact same document set can be inspected and reused.
+For automatic non-synthetic ingestion, `scripts/fetch_real_datasets.py` pulls:
+
+- `english` from Project Gutenberg
+- `code` from curated public GitHub raw files
+- `web` from Hacker News public items
+- `technical` from the arXiv API
+
+It also writes `data/manifest.real.json` so the fetched corpus is traceable.
 
 ## Benchmark commands
 
 ```bash
 python scripts/prepare_datasets.py --docs-per-domain 64 --overwrite
+python scripts/fetch_real_datasets.py --docs-per-domain 64 --overwrite
 python scripts/run_all_benchmarks.py --dataset all --trials 5 --enable-memory-profiler
 python scripts/run_all_benchmarks.py --dataset code web --tokenizers tiktoken hf naive cached --trials 3 --max-docs 32
 python scripts/run_exactness_tests.py --reference tiktoken --tokenizers tiktoken
