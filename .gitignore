@@ -1,0 +1,50 @@
+# Ignore everything by default
+*
+
+# Keep directories so unignored files can be reached
+!*/
+
+# Keep code files
+!*.py
+!*.ts
+!*.js
+!*.json
+!*.yml
+!*.yaml
+!*.sh
+!*.bat
+!*.cmd
+!*.ps1
+!*.go
+!*.rs
+!*.java
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+!*.cs
+!*.swift
+!*.kt
+!*.kts
+!*.php
+!*.rb
+!*.pl
+!*.scala
+!*.sql
+!*.R
+!*.jl
+!*.dart
+!*.scala
+!*.m
+!*.swift
+!*.kt
+!*.kts
+!*.fs
+!*.fsx
+
+# Keep Markdown files
+!*.md
+!*.markdown
+
+# Keep this gitignore
+!.gitignore
