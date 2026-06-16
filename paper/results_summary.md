@@ -14,7 +14,7 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 ## Methodology
 
-- Tokenizers compared: tiktoken, hf, sentencepiece, naive, cached
+- Tokenizers compared: tiktoken, tiktoken_cached, hf, sentencepiece, naive, cached
 - Domains: code, english, technical, web
 - Trials per configuration: 5
 - Batch size: 8
@@ -25,11 +25,11 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 | tokenizer | domain | mode | mb_per_s | tokens_per_s | avg_latency_ms | peak_memory_bytes |
 | --- | --- | --- | --- | --- | --- | --- |
-| tiktoken | technical | single | 5.5417095090741855 | 1106086.7430081873 | 0.2630000003591703 | 14575.2 |
-| tiktoken | code | single | 4.988159436529007 | 1168625.5351913825 | 0.4092462498192617 | 19938.4 |
-| tiktoken | english | single | 4.784466855633031 | 1180900.284363235 | 0.1878293744994152 | 21719.2 |
-| hf | code | single | 3.9643637908973326 | 870805.8940640491 | 0.5172899996068736 | 20040.0 |
-| hf | technical | single | 3.908434535651848 | 838216.3012122038 | 0.3738787509064423 | 16108.0 |
+| tiktoken | technical | single | 5.715343951355498 | 1153083.6369878757 | 0.2562895316714275 | 20807.0 |
+| tiktoken | code | single | 5.035151178451908 | 1174885.5791157917 | 0.40453921851622 | 64324.0 |
+| tiktoken | english | single | 4.479161483633531 | 1101243.4409602892 | 0.1689214062935207 | 31258.2 |
+| tiktoken | web | single | 3.891763019061671 | 1078596.119244086 | 0.0482285938460336 | 22503.2 |
+| tiktoken_cached | code | single | 2.782343231865716 | 649222.7985644138 | 0.7399565627338234 | 276448.6 |
 
 ## Results
 
@@ -37,15 +37,20 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 | tokenizer | domain | mb_per_s | tokens_per_s | avg_latency_ms |
 | --- | --- | --- | --- | --- |
-| tiktoken | technical | 5.5417095090741855 | 1106086.7430081873 | 0.2630000003591703 |
-| tiktoken | code | 4.988159436529007 | 1168625.5351913825 | 0.4092462498192617 |
-| tiktoken | english | 4.784466855633031 | 1180900.284363235 | 0.1878293744994152 |
-| hf | code | 3.9643637908973326 | 870805.8940640491 | 0.5172899996068736 |
-| hf | technical | 3.908434535651848 | 838216.3012122038 | 0.3738787509064423 |
+| tiktoken | technical | 5.715343951355498 | 1153083.6369878757 | 0.2562895316714275 |
+| tiktoken | code | 5.035151178451908 | 1174885.5791157917 | 0.40453921851622 |
+| tiktoken | english | 4.479161483633531 | 1101243.4409602892 | 0.1689214062935207 |
+| tiktoken | web | 3.891763019061671 | 1078596.119244086 | 0.0482285938460336 |
+| tiktoken_cached | code | 2.782343231865716 | 649222.7985644138 | 0.7399565627338234 |
 
 ### Exactness
 
-No exact-match-compatible non-reference tokenizer results were recorded.
+| tokenizer | domain | exact_match_rate |
+| --- | --- | --- |
+| tiktoken_cached | code | 1.0 |
+| tiktoken_cached | english | 1.0 |
+| tiktoken_cached | technical | 1.0 |
+| tiktoken_cached | web | 1.0 |
 
 ## Discussion
 

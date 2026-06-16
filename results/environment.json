@@ -4,6 +4,7 @@
   "processor": "Intel64 Family 6 Model 189 Stepping 1, GenuineIntel",
   "tokenizers": [
     "tiktoken",
+    "tiktoken_cached",
     "hf",
     "sentencepiece",
     "naive",
@@ -17,10 +18,10 @@
   ],
   "trials": 5,
   "batch_size": 8,
-  "max_docs": 32,
+  "max_docs": 128,
   "reference_tokenizer": "tiktoken",
   "pretokenization_comparison": {
-    "regex_mean_parts": 313.921875,
-    "simple_mean_parts": 195.15625
+    "regex_mean_parts": 310.640625,
+    "simple_mean_parts": 191.921875
   }
 }
