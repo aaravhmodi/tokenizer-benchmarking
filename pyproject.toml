@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastbpe"
+version = "0.1.0"
+description = "Benchmarking and optimizing tokenizer speed with exactness checks."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "psutil>=5.9",
+  "tqdm>=4.66",
+  "tiktoken>=0.7; platform_python_implementation != 'PyPy'",
+  "tokenizers>=0.19",
+  "sentencepiece>=0.2",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["fastbpe*"]
+
