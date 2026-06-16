@@ -1,6 +1,6 @@
 {
-  "generated_at_epoch_s": 1781625799,
-  "docs_per_domain": 8,
+  "generated_at_epoch_s": 1781626156,
+  "docs_per_domain": 32,
   "domains": [
     "english",
     "code",
@@ -31,7 +31,67 @@
         }
       },
       {
-        "path": "english\\0003_a-tale-of-two-cities-part-1.txt",
+        "path": "english\\0003_pride-and-prejudice-part-3.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 3",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0004_pride-and-prejudice-part-4.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 4",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0005_pride-and-prejudice-part-5.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 5",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0006_pride-and-prejudice-part-6.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 6",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0007_pride-and-prejudice-part-7.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 7",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0008_pride-and-prejudice-part-8.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1342/1342-0.txt",
+        "title": "Pride and Prejudice part 8",
+        "metadata": {
+          "book_title": "Pride and Prejudice",
+          "author": "Jane Austen"
+        }
+      },
+      {
+        "path": "english\\0009_a-tale-of-two-cities-part-1.txt",
         "source": "project_gutenberg",
         "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
         "title": "A Tale of Two Cities part 1",
@@ -41,7 +101,7 @@
         }
       },
       {
-        "path": "english\\0004_a-tale-of-two-cities-part-2.txt",
+        "path": "english\\0010_a-tale-of-two-cities-part-2.txt",
         "source": "project_gutenberg",
         "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
         "title": "A Tale of Two Cities part 2",
@@ -51,7 +111,67 @@
         }
       },
       {
-        "path": "english\\0005_frankenstein-part-1.txt",
+        "path": "english\\0011_a-tale-of-two-cities-part-3.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 3",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0012_a-tale-of-two-cities-part-4.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 4",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0013_a-tale-of-two-cities-part-5.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 5",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0014_a-tale-of-two-cities-part-6.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 6",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0015_a-tale-of-two-cities-part-7.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 7",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0016_a-tale-of-two-cities-part-8.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/98/98-0.txt",
+        "title": "A Tale of Two Cities part 8",
+        "metadata": {
+          "book_title": "A Tale of Two Cities",
+          "author": "Charles Dickens"
+        }
+      },
+      {
+        "path": "english\\0017_frankenstein-part-1.txt",
         "source": "project_gutenberg",
         "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
         "title": "Frankenstein part 1",
@@ -61,7 +181,7 @@
         }
       },
       {
-        "path": "english\\0006_frankenstein-part-2.txt",
+        "path": "english\\0018_frankenstein-part-2.txt",
         "source": "project_gutenberg",
         "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
         "title": "Frankenstein part 2",
@@ -71,7 +191,67 @@
         }
       },
       {
-        "path": "english\\0007_the-adventures-of-sherlock-holmes-part-1.txt",
+        "path": "english\\0019_frankenstein-part-3.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 3",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0020_frankenstein-part-4.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 4",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0021_frankenstein-part-5.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 5",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0022_frankenstein-part-6.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 6",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0023_frankenstein-part-7.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 7",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0024_frankenstein-part-8.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/84/84-0.txt",
+        "title": "Frankenstein part 8",
+        "metadata": {
+          "book_title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley"
+        }
+      },
+      {
+        "path": "english\\0025_the-adventures-of-sherlock-holmes-part-1.txt",
         "source": "project_gutenberg",
         "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
         "title": "The Adventures of Sherlock Holmes part 1",
@@ -81,10 +261,70 @@
         }
       },
       {
-        "path": "english\\0008_the-adventures-of-sherlock-holmes-part-2.txt",
+        "path": "english\\0026_the-adventures-of-sherlock-holmes-part-2.txt",
         "source": "project_gutenberg",
         "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
         "title": "The Adventures of Sherlock Holmes part 2",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      },
+      {
+        "path": "english\\0027_the-adventures-of-sherlock-holmes-part-3.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 3",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      },
+      {
+        "path": "english\\0028_the-adventures-of-sherlock-holmes-part-4.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 4",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      },
+      {
+        "path": "english\\0029_the-adventures-of-sherlock-holmes-part-5.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 5",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      },
+      {
+        "path": "english\\0030_the-adventures-of-sherlock-holmes-part-6.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 6",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      },
+      {
+        "path": "english\\0031_the-adventures-of-sherlock-holmes-part-7.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 7",
+        "metadata": {
+          "book_title": "The Adventures of Sherlock Holmes",
+          "author": "Arthur Conan Doyle"
+        }
+      },
+      {
+        "path": "english\\0032_the-adventures-of-sherlock-holmes-part-8.txt",
+        "source": "project_gutenberg",
+        "source_id": "https://www.gutenberg.org/files/1661/1661-0.txt",
+        "title": "The Adventures of Sherlock Holmes part 8",
         "metadata": {
           "book_title": "The Adventures of Sherlock Holmes",
           "author": "Arthur Conan Doyle"
@@ -93,145 +333,416 @@
     ],
     "code": [
       {
-        "path": "code\\0001_microsoft-typescript-src-compiler-parser-ts.py",
+        "path": "code\\0001_microsoft-typescript-src-compiler-parser-ts-chunk-1.py",
         "source": "github_raw",
         "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
-        "title": "microsoft/TypeScript src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 1",
         "metadata": {
           "repo": "microsoft/TypeScript",
-          "path": "src/compiler/parser.ts"
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 1
         }
       },
       {
-        "path": "code\\0002_pallets-flask-src-flask-app-py.py",
+        "path": "code\\0002_microsoft-typescript-src-compiler-parser-ts-chunk-2.py",
         "source": "github_raw",
-        "source_id": "https://raw.githubusercontent.com/pallets/flask/main/src/flask/app.py",
-        "title": "pallets/flask src/flask/app.py",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 2",
         "metadata": {
-          "repo": "pallets/flask",
-          "path": "src/flask/app.py"
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 2
         }
       },
       {
-        "path": "code\\0003_eslint-eslint-lib-linter-linter-js.py",
+        "path": "code\\0003_microsoft-typescript-src-compiler-parser-ts-chunk-3.py",
         "source": "github_raw",
-        "source_id": "https://raw.githubusercontent.com/eslint/eslint/main/lib/linter/linter.js",
-        "title": "eslint/eslint lib/linter/linter.js",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 3",
         "metadata": {
-          "repo": "eslint/eslint",
-          "path": "lib/linter/linter.js"
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 3
         }
       },
       {
-        "path": "code\\0004_psf-requests-src-requests-sessions-py.py",
+        "path": "code\\0004_microsoft-typescript-src-compiler-parser-ts-chunk-4.py",
         "source": "github_raw",
-        "source_id": "https://raw.githubusercontent.com/psf/requests/main/src/requests/sessions.py",
-        "title": "psf/requests src/requests/sessions.py",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 4",
         "metadata": {
-          "repo": "psf/requests",
-          "path": "src/requests/sessions.py"
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 4
         }
       },
       {
-        "path": "code\\0005_vercel-next-js-packages-next-src-server-base-server-ts.py",
+        "path": "code\\0005_microsoft-typescript-src-compiler-parser-ts-chunk-5.py",
         "source": "github_raw",
-        "source_id": "https://raw.githubusercontent.com/vercel/next.js/canary/packages/next/src/server/base-server.ts",
-        "title": "vercel/next.js packages/next/src/server/base-server.ts",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 5",
         "metadata": {
-          "repo": "vercel/next.js",
-          "path": "packages/next/src/server/base-server.ts"
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 5
         }
       },
       {
-        "path": "code\\0006_tiangolo-fastapi-fastapi-routing-py.py",
+        "path": "code\\0006_microsoft-typescript-src-compiler-parser-ts-chunk-6.py",
         "source": "github_raw",
-        "source_id": "https://raw.githubusercontent.com/tiangolo/fastapi/master/fastapi/routing.py",
-        "title": "tiangolo/fastapi fastapi/routing.py",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 6",
         "metadata": {
-          "repo": "tiangolo/fastapi",
-          "path": "fastapi/routing.py"
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 6
         }
       },
       {
-        "path": "code\\0007_facebook-react-packages-react-src-reacthooks-js.py",
+        "path": "code\\0007_microsoft-typescript-src-compiler-parser-ts-chunk-7.py",
         "source": "github_raw",
-        "source_id": "https://raw.githubusercontent.com/facebook/react/main/packages/react/src/ReactHooks.js",
-        "title": "facebook/react packages/react/src/ReactHooks.js",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 7",
         "metadata": {
-          "repo": "facebook/react",
-          "path": "packages/react/src/ReactHooks.js"
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 7
+        }
+      },
+      {
+        "path": "code\\0008_microsoft-typescript-src-compiler-parser-ts-chunk-8.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 8",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 8
+        }
+      },
+      {
+        "path": "code\\0009_microsoft-typescript-src-compiler-parser-ts-chunk-9.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 9",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 9
+        }
+      },
+      {
+        "path": "code\\0010_microsoft-typescript-src-compiler-parser-ts-chunk-10.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 10",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 10
+        }
+      },
+      {
+        "path": "code\\0011_microsoft-typescript-src-compiler-parser-ts-chunk-11.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 11",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 11
+        }
+      },
+      {
+        "path": "code\\0012_microsoft-typescript-src-compiler-parser-ts-chunk-12.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 12",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 12
+        }
+      },
+      {
+        "path": "code\\0013_microsoft-typescript-src-compiler-parser-ts-chunk-13.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 13",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 13
+        }
+      },
+      {
+        "path": "code\\0014_microsoft-typescript-src-compiler-parser-ts-chunk-14.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 14",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 14
+        }
+      },
+      {
+        "path": "code\\0015_microsoft-typescript-src-compiler-parser-ts-chunk-15.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 15",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 15
+        }
+      },
+      {
+        "path": "code\\0016_microsoft-typescript-src-compiler-parser-ts-chunk-16.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 16",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 16
+        }
+      },
+      {
+        "path": "code\\0017_microsoft-typescript-src-compiler-parser-ts-chunk-17.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 17",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 17
+        }
+      },
+      {
+        "path": "code\\0018_microsoft-typescript-src-compiler-parser-ts-chunk-18.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 18",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 18
+        }
+      },
+      {
+        "path": "code\\0019_microsoft-typescript-src-compiler-parser-ts-chunk-19.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 19",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 19
+        }
+      },
+      {
+        "path": "code\\0020_microsoft-typescript-src-compiler-parser-ts-chunk-20.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 20",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 20
+        }
+      },
+      {
+        "path": "code\\0021_microsoft-typescript-src-compiler-parser-ts-chunk-21.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 21",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 21
+        }
+      },
+      {
+        "path": "code\\0022_microsoft-typescript-src-compiler-parser-ts-chunk-22.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 22",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 22
+        }
+      },
+      {
+        "path": "code\\0023_microsoft-typescript-src-compiler-parser-ts-chunk-23.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 23",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 23
+        }
+      },
+      {
+        "path": "code\\0024_microsoft-typescript-src-compiler-parser-ts-chunk-24.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 24",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 24
+        }
+      },
+      {
+        "path": "code\\0025_microsoft-typescript-src-compiler-parser-ts-chunk-25.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 25",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 25
+        }
+      },
+      {
+        "path": "code\\0026_microsoft-typescript-src-compiler-parser-ts-chunk-26.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 26",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 26
+        }
+      },
+      {
+        "path": "code\\0027_microsoft-typescript-src-compiler-parser-ts-chunk-27.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 27",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 27
+        }
+      },
+      {
+        "path": "code\\0028_microsoft-typescript-src-compiler-parser-ts-chunk-28.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 28",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 28
+        }
+      },
+      {
+        "path": "code\\0029_microsoft-typescript-src-compiler-parser-ts-chunk-29.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 29",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 29
+        }
+      },
+      {
+        "path": "code\\0030_microsoft-typescript-src-compiler-parser-ts-chunk-30.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 30",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 30
+        }
+      },
+      {
+        "path": "code\\0031_microsoft-typescript-src-compiler-parser-ts-chunk-31.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 31",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 31
+        }
+      },
+      {
+        "path": "code\\0032_microsoft-typescript-src-compiler-parser-ts-chunk-32.py",
+        "source": "github_raw",
+        "source_id": "https://raw.githubusercontent.com/microsoft/TypeScript/main/src/compiler/parser.ts",
+        "title": "microsoft/TypeScript src/compiler/parser.ts chunk 32",
+        "metadata": {
+          "repo": "microsoft/TypeScript",
+          "path": "src/compiler/parser.ts",
+          "chunk_index": 32
         }
       }
     ],
     "web": [
       {
-        "path": "web\\0001_hn-48545818.txt",
+        "path": "web\\0001_hn-48495928.txt",
         "source": "hacker_news",
-        "source_id": "48545818",
-        "title": "HN 48545818",
+        "source_id": "48495928",
+        "title": "HN 48495928",
         "metadata": {
-          "hn_id": 48545818,
-          "score": 5,
-          "by": "xenophin"
+          "hn_id": 48495928,
+          "score": 458,
+          "by": "marc__1"
         }
       },
       {
-        "path": "web\\0002_hn-48519198.txt",
+        "path": "web\\0002_hn-48530382.txt",
         "source": "hacker_news",
-        "source_id": "48519198",
-        "title": "HN 48519198",
+        "source_id": "48530382",
+        "title": "HN 48530382",
         "metadata": {
-          "hn_id": 48519198,
-          "score": 18,
-          "by": "ogundipeore"
+          "hn_id": 48530382,
+          "score": 134,
+          "by": "octopus143"
         }
       },
       {
-        "path": "web\\0003_hn-48487897.txt",
+        "path": "web\\0003_hn-48447062.txt",
         "source": "hacker_news",
-        "source_id": "48487897",
-        "title": "HN 48487897",
+        "source_id": "48447062",
+        "title": "HN 48447062",
         "metadata": {
-          "hn_id": 48487897,
-          "score": 176,
-          "by": "robin_reala"
+          "hn_id": 48447062,
+          "score": 520,
+          "by": "john-titor"
         }
       },
       {
-        "path": "web\\0004_hn-48471970.txt",
+        "path": "web\\0004_hn-48520807.txt",
         "source": "hacker_news",
-        "source_id": "48471970",
-        "title": "HN 48471970",
+        "source_id": "48520807",
+        "title": "HN 48520807",
         "metadata": {
-          "hn_id": 48471970,
-          "score": 426,
-          "by": "d3Xt3r"
+          "hn_id": 48520807,
+          "score": 393,
+          "by": "austinallegro"
         }
       },
       {
-        "path": "web\\0005_hn-48498385.txt",
+        "path": "web\\0005_hn-48528587.txt",
         "source": "hacker_news",
-        "source_id": "48498385",
-        "title": "HN 48498385",
+        "source_id": "48528587",
+        "title": "HN 48528587",
         "metadata": {
-          "hn_id": 48498385,
-          "score": 785,
-          "by": "sam_bristow"
+          "hn_id": 48528587,
+          "score": 142,
+          "by": "zdw"
         }
       },
       {
-        "path": "web\\0006_hn-48555730.txt",
-        "source": "hacker_news",
-        "source_id": "48555730",
-        "title": "HN 48555730",
-        "metadata": {
-          "hn_id": 48555730,
-          "score": 3,
-          "by": "klaussilveira"
-        }
-      },
-      {
-        "path": "web\\0007_hn-48528371.txt",
+        "path": "web\\0006_hn-48528371.txt",
         "source": "hacker_news",
         "source_id": "48528371",
         "title": "HN 48528371",
@@ -242,20 +753,789 @@
         }
       },
       {
-        "path": "web\\0008_hn-48546616.txt",
+        "path": "web\\0007_hn-48553190.txt",
         "source": "hacker_news",
-        "source_id": "48546616",
-        "title": "HN 48546616",
+        "source_id": "48553190",
+        "title": "HN 48553190",
         "metadata": {
-          "hn_id": 48546616,
-          "score": 218,
-          "by": "epistasis"
+          "hn_id": 48553190,
+          "score": 10,
+          "by": "adulion"
+        }
+      },
+      {
+        "path": "web\\0008_hn-48550779.txt",
+        "source": "hacker_news",
+        "source_id": "48550779",
+        "title": "HN 48550779",
+        "metadata": {
+          "hn_id": 48550779,
+          "score": 648,
+          "by": "apitman"
+        }
+      },
+      {
+        "path": "web\\0009_hn-48523080.txt",
+        "source": "hacker_news",
+        "source_id": "48523080",
+        "title": "HN 48523080",
+        "metadata": {
+          "hn_id": 48523080,
+          "score": 408,
+          "by": "librick"
+        }
+      },
+      {
+        "path": "web\\0010_hn-48522233.txt",
+        "source": "hacker_news",
+        "source_id": "48522233",
+        "title": "HN 48522233",
+        "metadata": {
+          "hn_id": 48522233,
+          "score": 10,
+          "by": "throwaway81523"
+        }
+      },
+      {
+        "path": "web\\0011_hn-48543722.txt",
+        "source": "hacker_news",
+        "source_id": "48543722",
+        "title": "HN 48543722",
+        "metadata": {
+          "hn_id": 48543722,
+          "score": 12,
+          "by": "Brajeshwar"
+        }
+      },
+      {
+        "path": "web\\0012_hn-48470748.txt",
+        "source": "hacker_news",
+        "source_id": "48470748",
+        "title": "HN 48470748",
+        "metadata": {
+          "hn_id": 48470748,
+          "score": 116,
+          "by": "benbreen"
+        }
+      },
+      {
+        "path": "web\\0013_hn-48527145.txt",
+        "source": "hacker_news",
+        "source_id": "48527145",
+        "title": "HN 48527145",
+        "metadata": {
+          "hn_id": 48527145,
+          "score": 209,
+          "by": "losfair"
+        }
+      },
+      {
+        "path": "web\\0014_hn-48553827.txt",
+        "source": "hacker_news",
+        "source_id": "48553827",
+        "title": "HN 48553827",
+        "metadata": {
+          "hn_id": 48553827,
+          "score": 3,
+          "by": "ripe"
+        }
+      },
+      {
+        "path": "web\\0015_hn-48553686.txt",
+        "source": "hacker_news",
+        "source_id": "48553686",
+        "title": "HN 48553686",
+        "metadata": {
+          "hn_id": 48553686,
+          "score": 5,
+          "by": "jampekka"
+        }
+      },
+      {
+        "path": "web\\0016_hn-48542121.txt",
+        "source": "hacker_news",
+        "source_id": "48542121",
+        "title": "HN 48542121",
+        "metadata": {
+          "hn_id": 48542121,
+          "score": 13,
+          "by": "baud147258"
+        }
+      },
+      {
+        "path": "web\\0017_hn-48555730.txt",
+        "source": "hacker_news",
+        "source_id": "48555730",
+        "title": "HN 48555730",
+        "metadata": {
+          "hn_id": 48555730,
+          "score": 3,
+          "by": "klaussilveira"
+        }
+      },
+      {
+        "path": "web\\0018_hn-48508550.txt",
+        "source": "hacker_news",
+        "source_id": "48508550",
+        "title": "HN 48508550",
+        "metadata": {
+          "hn_id": 48508550,
+          "score": 31,
+          "by": "sabareesh"
+        }
+      },
+      {
+        "path": "web\\0019_hn-48504929.txt",
+        "source": "hacker_news",
+        "source_id": "48504929",
+        "title": "HN 48504929",
+        "metadata": {
+          "hn_id": 48504929,
+          "score": 112,
+          "by": "jtlebigot"
+        }
+      },
+      {
+        "path": "web\\0020_hn-48544823.txt",
+        "source": "hacker_news",
+        "source_id": "48544823",
+        "title": "HN 48544823",
+        "metadata": {
+          "hn_id": 48544823,
+          "score": 70,
+          "by": "andrewbr"
+        }
+      },
+      {
+        "path": "web\\0021_hn-48552809.txt",
+        "source": "hacker_news",
+        "source_id": "48552809",
+        "title": "HN 48552809",
+        "metadata": {
+          "hn_id": 48552809,
+          "score": 5,
+          "by": "Timofeibu"
+        }
+      },
+      {
+        "path": "web\\0022_hn-48501012.txt",
+        "source": "hacker_news",
+        "source_id": "48501012",
+        "title": "HN 48501012",
+        "metadata": {
+          "hn_id": 48501012,
+          "score": 115,
+          "by": "paulmooreparks"
+        }
+      },
+      {
+        "path": "web\\0023_hn-48484608.txt",
+        "source": "hacker_news",
+        "source_id": "48484608",
+        "title": "HN 48484608",
+        "metadata": {
+          "hn_id": 48484608,
+          "score": 10,
+          "by": "skogstokig"
+        }
+      },
+      {
+        "path": "web\\0024_hn-48538833.txt",
+        "source": "hacker_news",
+        "source_id": "48538833",
+        "title": "HN 48538833",
+        "metadata": {
+          "hn_id": 48538833,
+          "score": 149,
+          "by": "martiano"
+        }
+      },
+      {
+        "path": "web\\0025_hn-48505435.txt",
+        "source": "hacker_news",
+        "source_id": "48505435",
+        "title": "HN 48505435",
+        "metadata": {
+          "hn_id": 48505435,
+          "score": 62,
+          "by": "speckx"
+        }
+      },
+      {
+        "path": "web\\0026_hn-48463808.txt",
+        "source": "hacker_news",
+        "source_id": "48463808",
+        "title": "HN 48463808",
+        "metadata": {
+          "hn_id": 48463808,
+          "score": 2624,
+          "by": "Philpax"
+        }
+      },
+      {
+        "path": "web\\0027_hn-48553983.txt",
+        "source": "hacker_news",
+        "source_id": "48553983",
+        "title": "HN 48553983",
+        "metadata": {
+          "hn_id": 48553983,
+          "score": 15,
+          "by": "dstala"
+        }
+      },
+      {
+        "path": "web\\0028_hn-48540844.txt",
+        "source": "hacker_news",
+        "source_id": "48540844",
+        "title": "HN 48540844",
+        "metadata": {
+          "hn_id": 48540844,
+          "score": 517,
+          "by": "tuhtah"
+        }
+      },
+      {
+        "path": "web\\0029_hn-48493218.txt",
+        "source": "hacker_news",
+        "source_id": "48493218",
+        "title": "HN 48493218",
+        "metadata": {
+          "hn_id": 48493218,
+          "score": 62,
+          "by": "Antibabelic"
+        }
+      },
+      {
+        "path": "web\\0030_hn-48518969.txt",
+        "source": "hacker_news",
+        "source_id": "48518969",
+        "title": "HN 48518969",
+        "metadata": {
+          "hn_id": 48518969,
+          "score": 350,
+          "by": "sbochins"
+        }
+      },
+      {
+        "path": "web\\0031_hn-48535215.txt",
+        "source": "hacker_news",
+        "source_id": "48535215",
+        "title": "HN 48535215",
+        "metadata": {
+          "hn_id": 48535215,
+          "score": 86,
+          "by": "thunderbong"
+        }
+      },
+      {
+        "path": "web\\0032_hn-48523550.txt",
+        "source": "hacker_news",
+        "source_id": "48523550",
+        "title": "HN 48523550",
+        "metadata": {
+          "hn_id": 48523550,
+          "score": 31,
+          "by": "ogurechny"
         }
       }
     ],
     "technical": [
       {
-        "path": "technical\\0001_your-privacy-my-cloak-backdoor-attacks-on-differentially-private-federated-learning.md",
+        "path": "technical\\0001_probing-low-frame-rate-degradation-in-neural-audio-codecs.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16969v1",
+        "title": "Probing Low Frame Rate Degradation in Neural Audio Codecs",
+        "metadata": {
+          "authors": [
+            "Alex Gichamba",
+            "Moise Busogi"
+          ],
+          "categories": [
+            "cs.SD",
+            "cs.AI",
+            "eess.AS"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16969v1"
+        }
+      },
+      {
+        "path": "technical\\0002_activesam-image-conditional-class-pruning-for-fast-and-accurate-open-vocabulary-segmentation.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16996v1",
+        "title": "ActiveSAM: Image-Conditional Class Pruning for Fast and Accurate Open-Vocabulary Segmentation",
+        "metadata": {
+          "authors": [
+            "Tran Dinh Tien",
+            "Zhiqiang Shen"
+          ],
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16996v1"
+        }
+      },
+      {
+        "path": "technical\\0003_consensus-based-agentic-large-language-model-framework-for-harmonized-tariff-schedule-code-classification.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16987v1",
+        "title": "Consensus-based Agentic Large Language Model Framework for Harmonized Tariff Schedule Code Classification",
+        "metadata": {
+          "authors": [
+            "Truong Thanh Hung Nguyen",
+            "Khanh Van Quynh Nguyen",
+            "Hoang-Loc Cao",
+            "Tri Duong",
+            "Phuc Ho",
+            "Van Pham",
+            "Loc Nguyen",
+            "Hung Cao"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16987v1"
+        }
+      },
+      {
+        "path": "technical\\0004_the-importance-of-phase-in-neural-representations-an-internal-oppenheim-lim-test-of-image-classifiers.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17037v1",
+        "title": "The Importance of Phase in Neural Representations: An Internal Oppenheim-Lim Test of Image Classifiers",
+        "metadata": {
+          "authors": [
+            "Alper Y\u0131ld\u0131r\u0131m"
+          ],
+          "categories": [
+            "cs.CV",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17037v1"
+        }
+      },
+      {
+        "path": "technical\\0005_crossmaps-confidence-aware-open-vocabulary-semantic-mapping-for-rover-navigation.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16935v1",
+        "title": "CrossMaps: Confidence-Aware Open-Vocabulary Semantic Mapping for Rover Navigation",
+        "metadata": {
+          "authors": [
+            "Jan-Niklas Klein",
+            "Sona Ghahremani",
+            "Christian Medeiros Adriano",
+            "Holger Giese"
+          ],
+          "categories": [
+            "cs.RO",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16935v1"
+        }
+      },
+      {
+        "path": "technical\\0006_ma-sbi-misspecification-aware-simulation-based-inference-via-side-channel-guidance.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16923v1",
+        "title": "MA-SBI: Misspecification-Aware Simulation-Based Inference via Side-Channel Guidance",
+        "metadata": {
+          "authors": [
+            "Arunkumar V",
+            "Manoranjan Gandhudi",
+            "Gangadharan G. R.",
+            "Arun Prakash",
+            "S. Senthilkumar"
+          ],
+          "categories": [
+            "cs.AI",
+            "stat.ML"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16923v1"
+        }
+      },
+      {
+        "path": "technical\\0007_learning-the-geometry-of-data-a-mathematical-review-of-shape-space-analysis.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17022v1",
+        "title": "Learning the Geometry of Data: A Mathematical Review of Shape Space Analysis",
+        "metadata": {
+          "authors": [
+            "Gary P. T. Choi",
+            "Khanh Dao Duc",
+            "Shira Faigenbaum-Golovin",
+            "Karen Habermann",
+            "Emmanuel Hartman",
+            "Christoph von Tycowicz",
+            "Chi Zhang",
+            "Wenjun Zhao",
+            "Felix Zhou"
+          ],
+          "categories": [
+            "math.ST",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17022v1"
+        }
+      },
+      {
+        "path": "technical\\0008_selection-without-signal-recovery-through-expression-a-measurement-study-of-post-hoc-falsification-operators-for-frozen-small-code-models.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16999v1",
+        "title": "Selection Without Signal, Recovery Through Expression: A Measurement Study of Post-Hoc Falsification Operators for Frozen Small Code Models",
+        "metadata": {
+          "authors": [
+            "Mehmet Iscan"
+          ],
+          "categories": [
+            "cs.SE",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16999v1"
+        }
+      },
+      {
+        "path": "technical\\0009_demystifying-variance-in-circuit-discovery-of-llms.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16920v1",
+        "title": "Demystifying Variance in Circuit Discovery of LLMs",
+        "metadata": {
+          "authors": [
+            "Frank Zhengqing Wu",
+            "Francesco Tonin",
+            "Volkan Cevher"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16920v1"
+        }
+      },
+      {
+        "path": "technical\\0010_tunejury-an-open-metric-for-improving-music-generation-preference-alignment.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17006v1",
+        "title": "TuneJury: An Open Metric for Improving Music Generation Preference Alignment",
+        "metadata": {
+          "authors": [
+            "Yonghyun Kim",
+            "Junwon Lee",
+            "Haiwen Xia",
+            "Yinghao Ma",
+            "Junghyun Koo",
+            "Koichi Saito",
+            "Yuki Mitsufuji",
+            "Chris Donahue"
+          ],
+          "categories": [
+            "cs.SD",
+            "cs.AI",
+            "cs.LG",
+            "cs.MM",
+            "eess.AS"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17006v1"
+        }
+      },
+      {
+        "path": "technical\\0011_exact-posterior-score-estimation-for-solving-linear-inverse-problems.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17048v1",
+        "title": "Exact Posterior Score Estimation for Solving Linear Inverse Problems",
+        "metadata": {
+          "authors": [
+            "Abbas Mammadov",
+            "Ozgur Kara",
+            "Kaan Oktay",
+            "Iskander Azangulov",
+            "Adil Kaan Akan",
+            "Hyungjin Chung",
+            "James Matthew Rehg",
+            "Yee Whye Teh"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CV",
+            "stat.ML"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17048v1"
+        }
+      },
+      {
+        "path": "technical\\0012_the-embrace-of-open-science-an-analysis-of-a-decade-of-ai-research-and-56-800-conference-papers.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16974v1",
+        "title": "The embrace of open science: An analysis of a decade of AI research and 56 800 conference papers",
+        "metadata": {
+          "authors": [
+            "Kevin L Coakley",
+            "Thijs Snelleman",
+            "Holger Hoos",
+            "Odd Erik Gundersen"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16974v1"
+        }
+      },
+      {
+        "path": "technical\\0013_when-in-doubt-plan-it-out-committed-small-language-model-deliberation-for-reactive-reinforcement-learning.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16995v1",
+        "title": "When in Doubt, Plan It Out: Committed Small Language Model Deliberation for Reactive Reinforcement Learning",
+        "metadata": {
+          "authors": [
+            "Nathan Gavenski",
+            "Juarez Monteiro",
+            "Francisco Galuppo",
+            "Adriano Veloso",
+            "Odinaldo Rodrigues"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16995v1"
+        }
+      },
+      {
+        "path": "technical\\0014_scalable-pairwise-kernel-learning-with-stochastic-vec-trick.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16979v1",
+        "title": "Scalable Pairwise Kernel Learning with Stochastic Vec Trick",
+        "metadata": {
+          "authors": [
+            "Napsu Karmitsa",
+            "Tapio Pahikkala",
+            "Antti Airola"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16979v1"
+        }
+      },
+      {
+        "path": "technical\\0015_upper-bounds-on-the-generalization-error-of-deep-learning-models-via-local-robustness-and-stability.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16883v1",
+        "title": "Upper Bounds on the Generalization Error of Deep Learning Models via Local Robustness and Stability",
+        "metadata": {
+          "authors": [
+            "Abdul-Rauf Nuhu",
+            "Parham M. Kebria",
+            "Vahid Hemmati",
+            "Mahmoud N. Mahmoud",
+            "Edward Tunstel",
+            "Abdollah Homaifar"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16883v1"
+        }
+      },
+      {
+        "path": "technical\\0016_decoupling-inference-from-state-updates-in-low-latency-feature-engines-via-probabilistic-thinning.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16981v1",
+        "title": "Decoupling Inference from State Updates in Low-Latency Feature Engines via Probabilistic Thinning",
+        "metadata": {
+          "authors": [
+            "Augusto Peres",
+            "Iker Perez",
+            "Pedro Valdeira",
+            "Guilherme Jardim",
+            "Ana Sofia Gomes",
+            "Hugo Ferreira",
+            "Pedro Bizarro"
+          ],
+          "categories": [
+            "cs.DB",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16981v1"
+        }
+      },
+      {
+        "path": "technical\\0017_bayesian-inference-and-decision-audits-for-public-archives-of-frontier-ai-evaluations.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17005v1",
+        "title": "Bayesian Inference and Decision Audits for Public Archives of Frontier AI Evaluations",
+        "metadata": {
+          "authors": [
+            "Yanan Long"
+          ],
+          "categories": [
+            "cs.AI",
+            "stat.ME"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17005v1"
+        }
+      },
+      {
+        "path": "technical\\0018_geometric-action-model-for-robot-policy-learning.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17046v1",
+        "title": "Geometric Action Model for Robot Policy Learning",
+        "metadata": {
+          "authors": [
+            "Jisang Han",
+            "Seonghu Jeon",
+            "Jaewoo Jung",
+            "Ren\u00e9 Zurbr\u00fcgg",
+            "Honggyu An",
+            "Tifanny Portela",
+            "Marco Hutter",
+            "Marc Pollefeys",
+            "Seungryong Kim",
+            "Sunghwan Hong"
+          ],
+          "categories": [
+            "cs.RO",
+            "cs.CV",
+            "cs.LG"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17046v1"
+        }
+      },
+      {
+        "path": "technical\\0019_hamon-passive-optical-sequence-mixing-for-long-horizon-forecasting.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17028v1",
+        "title": "HAMON: Passive Optical Sequence Mixing for Long-Horizon Forecasting",
+        "metadata": {
+          "authors": [
+            "Alper Y\u0131ld\u0131r\u0131m"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.AI",
+            "cs.AR"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17028v1"
+        }
+      },
+      {
+        "path": "technical\\0020_the-complexity-of-min-max-optimization-for-quadratic-polynomials.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17000v1",
+        "title": "The Complexity of Min-Max Optimization for Quadratic Polynomials",
+        "metadata": {
+          "authors": [
+            "Martino Bernasconi",
+            "Matteo Castiglioni",
+            "Andrea Celli",
+            "Alexandros Hollender"
+          ],
+          "categories": [
+            "cs.CC",
+            "cs.GT",
+            "cs.LG",
+            "math.OC"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17000v1"
+        }
+      },
+      {
+        "path": "technical\\0021_analytic-torsion-and-spectral-gap-capture-persistent-laplacian-performance.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16990v1",
+        "title": "Analytic Torsion and Spectral Gap Capture Persistent-Laplacian Performance",
+        "metadata": {
+          "authors": [
+            "Jernej Grlj",
+            "Aaron D. Lauda"
+          ],
+          "categories": [
+            "cs.LG",
+            "math.AT"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16990v1"
+        }
+      },
+      {
+        "path": "technical\\0022_contrastive-difference-cka-reveals-concept-specific-structural-alignment-across-language-model-architectures.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16897v1",
+        "title": "Contrastive-Difference CKA Reveals Concept-Specific Structural Alignment Across Language Model Architectures",
+        "metadata": {
+          "authors": [
+            "Xueping Gao"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16897v1"
+        }
+      },
+      {
+        "path": "technical\\0023_impacteen-intentions-manipulation-persuasion-annotations-and-consequences-in-teen-communication-dataset.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16910v1",
+        "title": "IMPACTeen: Intentions, Manipulation, Persuasion, Annotations, and Consequences in Teen Communication Dataset",
+        "metadata": {
+          "authors": [
+            "Aleksander Szcz\u0119sny",
+            "Wiktoria Mieleszczenko-Kowszewicz",
+            "Maciej Markiewicz",
+            "Beata Bajcar",
+            "Tomasz Adamczyk",
+            "Jolanta Babiak",
+            "Grzegorz Chodak",
+            "Przemys\u0142aw Kazienko"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16910v1"
+        }
+      },
+      {
+        "path": "technical\\0024_how-much-do-reviews-really-contribute-a-study-on-text-enriched-matrix-factorization-for-recommendations.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16973v1",
+        "title": "How Much Do Reviews Really Contribute? A Study on Text-Enriched Matrix Factorization for Recommendations",
+        "metadata": {
+          "authors": [
+            "Eduardo Ferreira da Silva",
+            "Mayki dos Santos Oliveira",
+            "Joel Machado Pires Denis Dantas Boaventura",
+            "Frederico Ara\u00fajo Dur\u00e3o"
+          ],
+          "categories": [
+            "cs.IR",
+            "cs.AI"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16973v1"
+        }
+      },
+      {
+        "path": "technical\\0025_filtered-conformal-ellipsoids-for-graph-native-time-series.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.17014v1",
+        "title": "Filtered Conformal Ellipsoids for Graph-Native Time Series",
+        "metadata": {
+          "authors": [
+            "Yannick Limmer"
+          ],
+          "categories": [
+            "cs.LG",
+            "math.ST",
+            "stat.ML"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.17014v1"
+        }
+      },
+      {
+        "path": "technical\\0026_your-privacy-my-cloak-backdoor-attacks-on-differentially-private-federated-learning.md",
         "source": "arxiv_api",
         "source_id": "http://arxiv.org/abs/2606.17035v1",
         "title": "Your Privacy My Cloak: Backdoor Attacks on Differentially Private Federated Learning",
@@ -274,148 +1554,153 @@
         }
       },
       {
-        "path": "technical\\0002_filtered-conformal-ellipsoids-for-graph-native-time-series.md",
+        "path": "technical\\0027_functional-gradient-descent-with-adaptive-representations.md",
         "source": "arxiv_api",
-        "source_id": "http://arxiv.org/abs/2606.17014v1",
-        "title": "Filtered Conformal Ellipsoids for Graph-Native Time Series",
+        "source_id": "http://arxiv.org/abs/2606.16926v1",
+        "title": "Functional Gradient Descent with Adaptive Representations",
         "metadata": {
           "authors": [
-            "Yannick Limmer"
+            "Daniel Csillag",
+            "Rodrigo Schuller",
+            "Pedro Dall'Antonia",
+            "Leonidas Guibas",
+            "Luiz Velho",
+            "Tiago Novello"
           ],
           "categories": [
+            "math.OC",
             "cs.LG",
-            "math.ST",
             "stat.ML"
           ],
-          "arxiv_id": "http://arxiv.org/abs/2606.17014v1"
+          "arxiv_id": "http://arxiv.org/abs/2606.16926v1"
         }
       },
       {
-        "path": "technical\\0003_the-value-axis-language-models-encode-whether-they-re-on-the-right-track.md",
+        "path": "technical\\0028_phantoms-and-disclosures-a-causal-framework-for-auditing-synthetic-data.md",
         "source": "arxiv_api",
-        "source_id": "http://arxiv.org/abs/2606.17056v1",
-        "title": "The Value Axis: Language Models Encode Whether They're on the Right Track",
+        "source_id": "http://arxiv.org/abs/2606.16952v1",
+        "title": "Phantoms and Disclosures: a Causal Framework for Auditing Synthetic Data",
         "metadata": {
           "authors": [
-            "Nick Jiang",
-            "Isaac Kauvar",
-            "Jack Lindsey"
+            "Kareem Amin",
+            "Rudrajit Das",
+            "Alessandro Epasto",
+            "Adel Javanmard",
+            "Dennis Kraft",
+            "M\u00f3nica Ribero",
+            "Sergei Vassilvitskii"
           ],
           "categories": [
-            "cs.CL"
-          ],
-          "arxiv_id": "http://arxiv.org/abs/2606.17056v1"
-        }
-      },
-      {
-        "path": "technical\\0004_tokenpilot-cache-efficient-context-management-for-llm-agents.md",
-        "source": "arxiv_api",
-        "source_id": "http://arxiv.org/abs/2606.17016v1",
-        "title": "TokenPilot: Cache-Efficient Context Management for LLM Agents",
-        "metadata": {
-          "authors": [
-            "Buqiang Xu",
-            "Zirui Xue",
-            "Dianmou Chen",
-            "Chenyang Fu",
-            "Chiyu Wu",
-            "Caiying Huang",
-            "Chen Jiang",
-            "Jizhan Fang",
-            "Xinle Deng",
-            "Yijun Chen",
-            "Yunzhi Yao",
-            "Xuehai Wang",
-            "Jin Shang",
-            "Gong Yu",
-            "Ningyu Zhang"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.AI",
             "cs.LG",
-            "cs.MA"
+            "cs.AI",
+            "stat.AP",
+            "stat.ME",
+            "stat.ML"
           ],
-          "arxiv_id": "http://arxiv.org/abs/2606.17016v1"
+          "arxiv_id": "http://arxiv.org/abs/2606.16952v1"
         }
       },
       {
-        "path": "technical\\0005_context-aware-rl-for-agentic-and-multimodal-llms.md",
+        "path": "technical\\0029_a-multi-center-benchmark-for-abdominal-disease-diagnosis-and-report-generation-from-non-contrast-ct.md",
         "source": "arxiv_api",
-        "source_id": "http://arxiv.org/abs/2606.17053v1",
-        "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+        "source_id": "http://arxiv.org/abs/2606.16991v1",
+        "title": "A Multi-Center Benchmark for Abdominal Disease Diagnosis and Report Generation from Non-Contrast CT",
         "metadata": {
           "authors": [
-            "Peiyang Xu",
-            "Bangzheng Li",
-            "Sijia Liu",
-            "Karthik R. Narasimhan",
-            "Pramod Viswanath",
-            "Prateek Mittal",
-            "Xingyu Fu"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.CV"
-          ],
-          "arxiv_id": "http://arxiv.org/abs/2606.17053v1"
-        }
-      },
-      {
-        "path": "technical\\0006_the-importance-of-phase-in-neural-representations-an-internal-oppenheim-lim-test-of-image-classifiers.md",
-        "source": "arxiv_api",
-        "source_id": "http://arxiv.org/abs/2606.17037v1",
-        "title": "The Importance of Phase in Neural Representations: An Internal Oppenheim-Lim Test of Image Classifiers",
-        "metadata": {
-          "authors": [
-            "Alper Y\u0131ld\u0131r\u0131m"
+            "Mariam Elbakry",
+            "Aliaa Sayed Sheha",
+            "Salma Hassan Tantawy",
+            "Aya Yassin",
+            "Concetto Spampinato",
+            "Karim Lekadir",
+            "Xiaomeng Li",
+            "Marawan Elbatel"
           ],
           "categories": [
             "cs.CV",
-            "cs.AI",
             "cs.LG"
           ],
-          "arxiv_id": "http://arxiv.org/abs/2606.17037v1"
+          "arxiv_id": "http://arxiv.org/abs/2606.16991v1"
         }
       },
       {
-        "path": "technical\\0007_benchmarking-llm-agents-on-meta-analysis-articles-from-nature-portfolio.md",
+        "path": "technical\\0030_exploring-extrinsic-and-intrinsic-properties-for-effective-reasoning-with-code-interpreter.md",
         "source": "arxiv_api",
-        "source_id": "http://arxiv.org/abs/2606.17041v1",
-        "title": "Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio",
+        "source_id": "http://arxiv.org/abs/2606.16934v1",
+        "title": "Exploring Extrinsic and Intrinsic Properties for Effective Reasoning with Code Interpreter",
         "metadata": {
           "authors": [
-            "Anzhe Xie",
-            "Weihang Su",
-            "Yujia Zhou",
-            "Yiqun Liu",
-            "Qingyao Ai"
+            "Patomporn Payoungkhamdee",
+            "Napat Laosaengpha",
+            "Jenta Wonglertsakul",
+            "Pittawat Taveekitworachai",
+            "Pume Tuchinda",
+            "Panjapong Poobanchuen",
+            "Ekapol Chuangsuwanich",
+            "Can Udomcharoenchaikit",
+            "Samuel Cahyawijaya",
+            "Peerat Limkonchotiwat",
+            "Sarana Nutanong"
           ],
           "categories": [
             "cs.CL",
-            "cs.IR"
+            "cs.LG"
           ],
-          "arxiv_id": "http://arxiv.org/abs/2606.17041v1"
+          "arxiv_id": "http://arxiv.org/abs/2606.16934v1"
         }
       },
       {
-        "path": "technical\\0008_deeprubric-evidence-tree-rubric-supervision-for-efficient-reinforcement-learning-of-deep-research-agents.md",
+        "path": "technical\\0031_dynestyx-a-probabilistic-programming-library-for-dynamical-systems.md",
         "source": "arxiv_api",
-        "source_id": "http://arxiv.org/abs/2606.17029v1",
-        "title": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+        "source_id": "http://arxiv.org/abs/2606.16985v1",
+        "title": "Dynestyx: A Probabilistic Programming Library for Dynamical Systems",
         "metadata": {
           "authors": [
-            "Minghang Zhu",
-            "Chuyang Wei",
-            "Junhao Xu",
-            "Yilin Cheng",
-            "Zhumin Chen",
-            "Jiyan He"
+            "Daniel Waxman",
+            "Dmitry Batenkov",
+            "John Feser",
+            "Andy Zane",
+            "Eli Bingham",
+            "Youssef Marzouk",
+            "Matthew E. Levine"
           ],
           "categories": [
-            "cs.CL"
+            "stat.ML",
+            "cs.LG",
+            "eess.SP",
+            "nlin.CD",
+            "stat.ME"
           ],
-          "arxiv_id": "http://arxiv.org/abs/2606.17029v1"
+          "arxiv_id": "http://arxiv.org/abs/2606.16985v1"
+        }
+      },
+      {
+        "path": "technical\\0032_latent-space-mapping-of-interpretable-structural-coordinates-from-stochastic-single-molecule-signals.md",
+        "source": "arxiv_api",
+        "source_id": "http://arxiv.org/abs/2606.16950v1",
+        "title": "Latent space mapping of interpretable structural coordinates from stochastic single-molecule signals",
+        "metadata": {
+          "authors": [
+            "Matteo Cartiglia",
+            "Sandro Kuppel",
+            "Wouter Botermans Wannes Peeters",
+            "Natan Biesmans",
+            "Liam Vandekerckhove",
+            "Eric Beamish",
+            "Koen Ongena",
+            "Wouter Renckens",
+            "Pol Van Dorpe",
+            "Sanjin Marion"
+          ],
+          "categories": [
+            "physics.ins-det",
+            "cs.LG",
+            "physics.bio-ph",
+            "physics.chem-ph",
+            "physics.data-an",
+            "q-bio.BM"
+          ],
+          "arxiv_id": "http://arxiv.org/abs/2606.16950v1"
         }
       }
     ]
