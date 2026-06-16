@@ -34,11 +34,7 @@
 !*.R
 !*.jl
 !*.dart
-!*.scala
 !*.m
-!*.swift
-!*.kt
-!*.kts
 !*.fs
 !*.fsx
 
@@ -48,3 +44,16 @@
 
 # Keep this gitignore
 !.gitignore
+
+# Ignore dataset, benchmark, and generated output folders
+/data/
+/results/
+.matplotlib/
+
+# Ignore paper output artifacts
+/paper/*.pdf
+/paper/*.aux
+/paper/*.log
+/paper/*.out
+/paper/*.toc
+/paper/*.synctex.gz

@@ -25,11 +25,11 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 | tokenizer | domain | mode | mb_per_s | tokens_per_s | avg_latency_ms | peak_memory_bytes |
 | --- | --- | --- | --- | --- | --- | --- |
-| sentencepiece | code | single | 6.325406985833624 | 1575259.114449651 | 0.0234781249673687 | 3192.0 |
-| sentencepiece | web | single | 6.272883106886823 | 1715894.263483554 | 0.0202893750156363 | 3000.0 |
-| tiktoken | english | single | 6.263450213790594 | 944375.6769298372 | 0.0226637499054049 | 3285.6 |
-| sentencepiece | english | single | 5.989888638739555 | 862077.9271526426 | 0.0241687504967558 | 3179.2 |
-| sentencepiece | technical | single | 5.238176013694884 | 1234297.8992665452 | 0.0316499999826191 | 3544.0 |
+| tiktoken | technical | single | 5.909159736932676 | 1225606.419004629 | 0.2545349991123657 | 12927.2 |
+| tiktoken | code | single | 4.850739983926603 | 1144326.0583846294 | 23.281377142744272 | 3254357.6 |
+| tiktoken | english | single | 4.643709831299247 | 1147159.5712394137 | 0.1863049994426546 | 12651.2 |
+| tiktoken | web | single | 3.7154968729576607 | 997306.2319129856 | 0.0303625012747943 | 2155.2 |
+| hf | technical | single | 3.1346939596567718 | 917873.3578391684 | 0.4803649993846193 | 16944.0 |
 
 ## Results
 
@@ -37,11 +37,11 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 | tokenizer | domain | mb_per_s | tokens_per_s | avg_latency_ms |
 | --- | --- | --- | --- | --- |
-| sentencepiece | code | 6.325406985833624 | 1575259.114449651 | 0.0234781249673687 |
-| sentencepiece | web | 6.272883106886823 | 1715894.263483554 | 0.0202893750156363 |
-| tiktoken | english | 6.263450213790594 | 944375.6769298372 | 0.0226637499054049 |
-| sentencepiece | english | 5.989888638739555 | 862077.9271526426 | 0.0241687504967558 |
-| sentencepiece | technical | 5.238176013694884 | 1234297.8992665452 | 0.0316499999826191 |
+| tiktoken | technical | 5.909159736932676 | 1225606.419004629 | 0.2545349991123657 |
+| tiktoken | code | 4.850739983926603 | 1144326.0583846294 | 23.281377142744272 |
+| tiktoken | english | 4.643709831299247 | 1147159.5712394137 | 0.1863049994426546 |
+| tiktoken | web | 3.7154968729576607 | 997306.2319129856 | 0.0303625012747943 |
+| hf | technical | 3.1346939596567718 | 917873.3578391684 | 0.4803649993846193 |
 
 ### Exactness
 

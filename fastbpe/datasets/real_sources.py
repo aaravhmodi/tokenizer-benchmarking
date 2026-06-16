@@ -74,6 +74,29 @@ def _write_documents(documents: Iterable[FetchedDocument], output_dir: Path) -> 
     return written_paths
 
 
+def _chunk_by_paragraphs(text: str, min_chars: int = 600, max_chars: int = 2200) -> list[str]:
+    parts = [part.strip() for part in re.split(r"\n\s*\n", text) if part.strip()]
+    chunks: list[str] = []
+    current: list[str] = []
+    current_len = 0
+    for part in parts:
+        addition = len(part) + (2 if current else 0)
+        if current and current_len + addition > max_chars:
+            chunk = "\n\n".join(current).strip()
+            if len(chunk) >= min_chars:
+                chunks.append(chunk)
+            current = [part]
+            current_len = len(part)
+        else:
+            current.append(part)
+            current_len += addition
+    if current:
+        chunk = "\n\n".join(current).strip()
+        if len(chunk) >= min_chars:
+            chunks.append(chunk)
+    return chunks
+
+
 def _strip_gutenberg_boilerplate(text: str) -> str:
     start_markers = [
         "*** START OF THE PROJECT GUTENBERG EBOOK",
@@ -132,22 +155,30 @@ def fetch_code_documents(max_docs: int, seed: int = 13) -> list[FetchedDocument]
     urls = CODE_URLS[:]
     rng.shuffle(urls)
     documents: list[FetchedDocument] = []
-    for item in urls[:max_docs]:
+    for item in urls:
         try:
             response = session.get(item["url"], timeout=60)
             response.raise_for_status()
         except requests.RequestException:
             continue
-        documents.append(
-            FetchedDocument(
-                domain="code",
-                source="github_raw",
-                source_id=item["url"],
-                title=f"{item['repo']} {item['path']}",
-                text=_clean_whitespace(response.text),
-                metadata={"repo": item["repo"], "path": item["path"]},
+        text = _clean_whitespace(response.text)
+        chunks = _chunk_by_paragraphs(text, min_chars=500, max_chars=2400)
+        if not chunks:
+            chunks = [text]
+        rng.shuffle(chunks)
+        for index, chunk in enumerate(chunks, start=1):
+            documents.append(
+                FetchedDocument(
+                    domain="code",
+                    source="github_raw",
+                    source_id=item["url"],
+                    title=f"{item['repo']} {item['path']} chunk {index}",
+                    text=chunk,
+                    metadata={"repo": item["repo"], "path": item["path"], "chunk_index": index},
+                )
             )
-        )
+            if len(documents) >= max_docs:
+                return documents[:max_docs]
     return documents
 
 
