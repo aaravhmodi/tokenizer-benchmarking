@@ -20,7 +20,7 @@
   "max_docs": 64,
   "reference_tokenizer": "tiktoken",
   "pretokenization_comparison": {
-    "regex_mean_parts": 34.0,
-    "simple_mean_parts": 17.5
+    "regex_mean_parts": 47.125,
+    "simple_mean_parts": 23.625
   }
 }

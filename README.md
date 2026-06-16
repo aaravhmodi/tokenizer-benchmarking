@@ -86,6 +86,7 @@ python scripts/run_all_benchmarks.py --dataset all --trials 5 --enable-memory-pr
 python scripts/run_all_benchmarks.py --dataset code web --tokenizers tiktoken hf naive cached --trials 3 --max-docs 32
 python scripts/run_exactness_tests.py --reference tiktoken --tokenizers tiktoken
 python scripts/generate_report.py
+python scripts/generate_latex_paper.py
 ```
 
 ## Methodology
