@@ -1,0 +1,26 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python_version": "3.11.9",
+  "processor": "Intel64 Family 6 Model 189 Stepping 1, GenuineIntel",
+  "tokenizers": [
+    "tiktoken",
+    "hf",
+    "sentencepiece",
+    "naive",
+    "cached"
+  ],
+  "domains": [
+    "code",
+    "english",
+    "technical",
+    "web"
+  ],
+  "trials": 5,
+  "batch_size": 8,
+  "max_docs": 64,
+  "reference_tokenizer": "tiktoken",
+  "pretokenization_comparison": {
+    "regex_mean_parts": 34.0,
+    "simple_mean_parts": 17.5
+  }
+}

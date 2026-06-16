@@ -8,7 +8,14 @@ import pandas as pd
 
 def _format_table(df: pd.DataFrame, columns: list[str]) -> str:
     subset = df[columns].copy()
-    return subset.to_markdown(index=False)
+    headers = [str(column) for column in subset.columns]
+    lines = [
+        "| " + " | ".join(headers) + " |",
+        "| " + " | ".join(["---"] * len(headers)) + " |",
+    ]
+    for row in subset.itertuples(index=False, name=None):
+        lines.append("| " + " | ".join(str(value) for value in row) + " |")
+    return "\n".join(lines)
 
 
 def generate_report(results_dir: str | Path = "results", paper_dir: str | Path = "paper") -> Path:
@@ -84,4 +91,3 @@ FastBPE provides a reproducible framework for answering when faster exact tokeni
 
 if __name__ == "__main__":
     generate_report()
-
