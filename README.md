@@ -2,6 +2,12 @@
 
 FastBPE is a reproducible ML systems benchmark for studying whether Byte Pair Encoding style tokenization can be accelerated without changing token outputs where exact compatibility is required. The project compares multiple tokenizer backends across text domains, measures throughput and latency, tracks memory usage, and prototypes optimization ideas such as repeated-substring caching.
 
+## Article
+
+Technical write-up:
+
+- https://medium.com/@aaravmodi20/fastbpe-can-we-make-tokenization-faster-without-changing-the-tokens-7e2d644b1152?postPublishedType=repub
+
 ## Why tokenizer speed matters
 
 Tokenizer throughput is a real systems bottleneck in:
