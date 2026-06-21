@@ -45,7 +45,7 @@ These differences affect both token boundaries and cache reuse behavior.
 
 ### 2.3 Exact Token Compatibility
 
-Fast tokenizer comparisons are easy to overstate when different vocabularies are involved. A tokenizer can be “fast” simply because it emits different token sequences. For that reason, this project treats `tiktoken` as the reference tokenizer for OpenAI-style compatibility experiments and only interprets exact token-ID equality when a candidate tokenizer is explicitly intended to match the same vocabulary and segmentation semantics.
+Fast tokenizer comparisons are easy to overstate when different vocabularies are involved. A tokenizer can be "fast" simply because it emits different token sequences. For that reason, this project treats `tiktoken` as the reference tokenizer for OpenAI-style compatibility experiments and only interprets exact token-ID equality when a candidate tokenizer is explicitly intended to match the same vocabulary and segmentation semantics.
 
 ### 2.4 Metrics
 
