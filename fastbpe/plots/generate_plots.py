@@ -1,7 +1,12 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
+os.environ.setdefault("MPLCONFIGDIR", str(Path(__file__).resolve().parents[2] / ".matplotlib"))
+
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -46,6 +51,35 @@ def generate_plots(results_dir: str | Path) -> list[Path]:
     sns.boxplot(data=raw, x="tokenizer", y="avg_latency_ms")
     plt.title("Latency Distribution by Tokenizer")
     path = plots_dir / "latency_distribution.png"
+    _save_plot(path)
+    generated.append(path)
+
+    latency_metrics = summary.groupby("tokenizer", as_index=False).agg(
+        avg_latency_ms=("avg_latency_ms", "mean"),
+        p50_latency_ms=("p50_latency_ms", "mean"),
+        p95_latency_ms=("p95_latency_ms", "mean"),
+        p99_latency_ms=("p99_latency_ms", "mean"),
+    )
+    latency_long = latency_metrics.melt(
+        id_vars="tokenizer",
+        value_vars=["avg_latency_ms", "p50_latency_ms", "p95_latency_ms", "p99_latency_ms"],
+        var_name="metric",
+        value_name="latency_ms",
+    )
+    metric_labels = {
+        "avg_latency_ms": "avg",
+        "p50_latency_ms": "p50",
+        "p95_latency_ms": "p95",
+        "p99_latency_ms": "p99",
+    }
+    latency_long["metric"] = latency_long["metric"].map(metric_labels)
+    plt.figure(figsize=(11, 5))
+    ax = sns.barplot(data=latency_long, x="tokenizer", y="latency_ms", hue="metric")
+    plt.title("Latency Summary by Tokenizer (avg, p50, p95, p99)")
+    plt.ylabel("Latency (ms)")
+    for container in ax.containers:
+        ax.bar_label(container, fmt="%.3f", fontsize=7, padding=2)
+    path = plots_dir / "latency_percentiles.png"
     _save_plot(path)
     generated.append(path)
 
