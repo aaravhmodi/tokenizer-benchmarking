@@ -43,6 +43,7 @@ class CachedPythonBPEAdapter(NaivePythonBPEAdapter):
 
     def reset_stats(self) -> None:
         super().reset_stats()
+        self.cache.clear()
         self.cache_hits = 0
         self.cache_misses = 0
         self.cache_evictions = 0
@@ -59,4 +60,3 @@ class CachedPythonBPEAdapter(NaivePythonBPEAdapter):
             "cache_capacity": self.cache_size,
             "cache_hit_rate": hit_rate,
         }
-

@@ -83,12 +83,35 @@ The exactness benchmark on the 128-document real corpus showed:
 
 This is a major research milestone because the project can now support a real statement about exact-token compatibility for an optimized path.
 
+## Phase 8: Corrected Benchmark Methodology
+
+An important benchmarking error was discovered after the first exact-compatible caching experiments. Cache state had been allowed to persist across repeated benchmark trials, which made later trials unrealistically fast for whole-document caching.
+
+The methodology was corrected by:
+
+- clearing cache state between trials
+- rerunning the benchmark on the full fetched corpus
+- regenerating the paper and report after the correction
+
+This matters because it changed the interpretation of the optimization results. The corrected benchmark showed that exact-compatible caching was still correct, but no longer produced the implausibly large speedup seen under the flawed setup.
+
+## Phase 9: Document-First Exact-Compatible Caching
+
+Profiling showed that the main bottleneck in the exact-compatible cached adapter was not cache misses, but Python-side overhead:
+
+- regex traversal
+- per-piece iteration
+- cache bookkeeping around individual pieces
+
+To address that, the exact-compatible adapter was revised to prefer a document-level cache backed by native `tiktoken.encode()` on cache misses. This design keeps exact token IDs while removing the slowest Python-side hot path. The piece-level cache remains in the codebase as an experimental mechanism, but the practical path now prioritizes native encoding plus memoization.
+
 ## Current State
 
 The current evidence supports the following conclusions:
 
 - exact compatibility is achievable with the `tiktoken_cached` design
-- the present Python implementation does not outperform native `tiktoken`
+- the latest document-first exact-compatible design slightly outperforms native `tiktoken` on the current benchmark
+- that speed gain comes with a much larger memory footprint
 - caching still improves the naive Python baseline
 - domain and corpus size materially affect tokenizer behavior
 
@@ -100,14 +123,16 @@ So the project has progressed from:
 4. real-data benchmarking
 5. exact-compatible optimization
 6. exactness verification
+7. corrected fair benchmarking
+8. document-first exact-compatible caching
 
 ## Next Stage
 
-The next technical objective is no longer to prove exactness. That has been demonstrated for the current corpus. The next objective is to improve the exact-compatible optimized path enough to challenge `tiktoken` on speed.
+The next technical objective is no longer to prove exactness. That has been demonstrated for the current corpus. The next objective is to improve the exact-compatible optimized path enough to preserve or widen the current throughput edge while reducing memory cost.
 
 That likely requires:
 
-- reducing Python overhead in piece handling
+- reducing memory overhead in document caching
 - improving cache representation and lookup cost
 - testing cache-aware batching
 - possibly moving exact-compatible caching into a lower-level implementation

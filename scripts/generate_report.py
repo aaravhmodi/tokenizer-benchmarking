@@ -32,6 +32,10 @@ def generate_report(results_dir: str | Path = "results", paper_dir: str | Path =
     environment = json.loads((results_dir / "environment.json").read_text(encoding="utf-8"))
     top_speed = summary.sort_values("mb_per_s", ascending=False).head(5)
     match_rows = summary.dropna(subset=["exact_match_rate"])
+    exact_cached = summary[summary["tokenizer"] == "tiktoken_cached"].copy()
+    exact_cached_mean = exact_cached["mb_per_s"].mean() if not exact_cached.empty else None
+    tiktoken_mean = summary[summary["tokenizer"] == "tiktoken"]["mb_per_s"].mean() if "tiktoken" in summary["tokenizer"].values else None
+    direct_compare = summary[summary["tokenizer"].isin(["tiktoken", "tiktoken_cached"])].copy()
 
     report = f"""# FastBPE: Benchmarking Exact Tokenizer Throughput Across Text Domains
 
@@ -70,9 +74,15 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 {"No exact-match-compatible non-reference tokenizer results were recorded." if match_rows.empty else _format_table(match_rows, ["tokenizer", "domain", "exact_match_rate"])}
 
+### Direct Comparison: `tiktoken` vs `tiktoken_cached`
+
+{"Direct comparison unavailable." if direct_compare.empty else _format_table(direct_compare, ["tokenizer", "domain", "mb_per_s", "tokens_per_s", "avg_latency_ms", "peak_memory_bytes", "exact_match_rate"])}
+
 ## Discussion
 
 The main result should be interpreted jointly across throughput, latency spread, and memory usage. Domain-specific slowdowns are expected because code, noisy text, and markdown drive different pre-tokenization behavior and token boundary density. The cached prototype is designed to help repeated-token workloads and should be evaluated against its memory overhead and hit rate.
+
+The exact-compatible result is now more concrete: `tiktoken_cached` preserves `tiktoken` token IDs exactly on the benchmark corpus.{" Its mean throughput was " + str(round(exact_cached_mean, 3)) + " MB/s versus " + str(round(tiktoken_mean, 3)) + " MB/s for `tiktoken`." if exact_cached_mean is not None and tiktoken_mean is not None else ""} The speed advantage is modest, while memory usage is dramatically higher, so the right interpretation is a tradeoff rather than a free optimization.
 
 ## Proposed Solution
 
@@ -81,13 +91,13 @@ The optimized tokenizer adds a repeated-substring cache on top of a simple Pytho
 ## Limitations
 
 - Results are hardware- and Python-runtime-specific.
-- Synthetic corpora are used when real datasets are absent.
+- Real fetched corpora are more representative than the synthetic fallback, but they are still a sampled benchmark corpus rather than a complete production distribution.
 - Non-compatible vocabularies cannot be judged on exact token ID equality.
-- The custom Python tokenizers are research baselines, not production Rust or C++ systems.
+- The exact-compatible cached tokenizer is implemented in Python around `tiktoken` internals, so it is not yet a fair substitute for a lower-level native optimization.
 
 ## Conclusion
 
-FastBPE provides a reproducible framework for answering when faster exact tokenization is possible, which domains stress tokenizer implementations most, and how caching changes the speed-memory tradeoff.
+FastBPE now shows two distinct outcomes: exact token-ID compatibility can be preserved in an optimized path, and with a document-first caching strategy that path can slightly outperform native `tiktoken` on this benchmark. The cost is much higher memory usage, so the benchmark’s main value is in clarifying when that tradeoff might or might not be worth it.
 """
     output_path = paper_dir / "results_summary.md"
     output_path.write_text(report, encoding="utf-8")

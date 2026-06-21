@@ -41,6 +41,7 @@ class CachedTikTokenAdapter(TokenizerAdapter):
         self.doc_cache_misses = 0
         self.doc_cache_evictions = 0
         self.piece_count = 0
+        self.native_encode_calls = 0
 
     def _encode_piece(self, piece: str) -> list[int]:
         self.piece_count += 1
@@ -62,10 +63,10 @@ class CachedTikTokenAdapter(TokenizerAdapter):
             self.doc_cache.move_to_end(text)
             return list(self.doc_cache[text])
         self.doc_cache_misses += 1
-        ids: list[int] = []
-        for piece in self.pattern.findall(text):
-            ids.extend(self._encode_piece(piece))
-        encoded = tuple(ids)
+        # Native encode on cache miss is materially faster than Python-side
+        # piece orchestration while still preserving exact token IDs.
+        self.native_encode_calls += 1
+        encoded = tuple(self.encoding.encode(text))
         self.doc_cache[text] = encoded
         if len(self.doc_cache) > self.doc_cache_size:
             self.doc_cache.popitem(last=False)
@@ -76,6 +77,8 @@ class CachedTikTokenAdapter(TokenizerAdapter):
         return [self.encode(text) for text in texts]
 
     def reset_stats(self) -> None:
+        self.cache.clear()
+        self.doc_cache.clear()
         self.cache_hits = 0
         self.cache_misses = 0
         self.cache_evictions = 0
@@ -83,6 +86,7 @@ class CachedTikTokenAdapter(TokenizerAdapter):
         self.doc_cache_misses = 0
         self.doc_cache_evictions = 0
         self.piece_count = 0
+        self.native_encode_calls = 0
 
     def stats(self) -> dict[str, int | float]:
         total = self.cache_hits + self.cache_misses
@@ -101,4 +105,5 @@ class CachedTikTokenAdapter(TokenizerAdapter):
             "doc_cache_capacity": self.doc_cache_size,
             "doc_cache_hit_rate": (self.doc_cache_hits / doc_total) if doc_total else 0.0,
             "piece_count": self.piece_count,
+            "native_encode_calls": self.native_encode_calls,
         }

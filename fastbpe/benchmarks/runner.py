@@ -99,6 +99,8 @@ def run_benchmarks(
             tokenizer.encode(texts[0])
             cold_start_ms = (time.perf_counter() - cold_start_begin) * 1000
             for trial in range(1, trials + 1):
+                tokenizer.reset_stats()
+                tokenizer.warmup(texts[:4])
                 if enable_memory_profiler:
                     timing_result, memory = measure_memory(time_single, tokenizer.encode, texts)
                 else:

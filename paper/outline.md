@@ -25,6 +25,7 @@ Benchmark exact tokenizer throughput and evaluate a cached BPE-inspired optimiza
 ## Results
 
 - Overall throughput
+- Direct comparison: `tiktoken` vs `tiktoken_cached`
 - Domain sensitivity
 - Input-length scaling
 - Batch versus single encoding
@@ -36,6 +37,7 @@ Benchmark exact tokenizer throughput and evaluate a cached BPE-inspired optimiza
 - Why specific tokenizers are faster
 - Why domains differ
 - When caching helps
+- Why exact-compatible caching only gives a modest speed gain
 - Speed-memory tradeoffs
 
 ## Limitations
@@ -47,4 +49,5 @@ Benchmark exact tokenizer throughput and evaluate a cached BPE-inspired optimiza
 ## Conclusion
 
 - Conditions where exact faster tokenization is feasible
+- Why the current result is a tradeoff, not a free win
 

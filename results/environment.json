@@ -18,7 +18,7 @@
   ],
   "trials": 5,
   "batch_size": 8,
-  "max_docs": 128,
+  "max_docs": 256,
   "reference_tokenizer": "tiktoken",
   "pretokenization_comparison": {
     "regex_mean_parts": 310.640625,

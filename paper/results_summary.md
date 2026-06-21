@@ -25,11 +25,11 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 | tokenizer | domain | mode | mb_per_s | tokens_per_s | avg_latency_ms | peak_memory_bytes |
 | --- | --- | --- | --- | --- | --- | --- |
-| tiktoken | technical | single | 5.715343951355498 | 1153083.6369878757 | 0.2562895316714275 | 20807.0 |
-| tiktoken | code | single | 5.035151178451908 | 1174885.5791157917 | 0.40453921851622 | 64324.0 |
-| tiktoken | english | single | 4.479161483633531 | 1101243.4409602892 | 0.1689214062935207 | 31258.2 |
-| tiktoken | web | single | 3.891763019061671 | 1078596.119244086 | 0.0482285938460336 | 22503.2 |
-| tiktoken_cached | code | single | 2.782343231865716 | 649222.7985644138 | 0.7399565627338234 | 276448.6 |
+| tiktoken_cached | technical | single | 6.376365956809692 | 1290529.145360713 | 0.2312619541044114 | 2472672.0 |
+| tiktoken | technical | single | 6.291333413663785 | 1273319.1897249734 | 0.2343800001654017 | 35843.8 |
+| tiktoken | english | single | 5.137940945588106 | 1267727.9277666814 | 0.1387139845519414 | 46248.0 |
+| tiktoken_cached | code | single | 5.133743281579646 | 1219410.2639649643 | 0.4308817969103984 | 4470460.0 |
+| tiktoken_cached | english | single | 4.98460850642769 | 1229894.9091674387 | 0.1431261719517351 | 1456340.0 |
 
 ## Results
 
@@ -37,11 +37,11 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 
 | tokenizer | domain | mb_per_s | tokens_per_s | avg_latency_ms |
 | --- | --- | --- | --- | --- |
-| tiktoken | technical | 5.715343951355498 | 1153083.6369878757 | 0.2562895316714275 |
-| tiktoken | code | 5.035151178451908 | 1174885.5791157917 | 0.40453921851622 |
-| tiktoken | english | 4.479161483633531 | 1101243.4409602892 | 0.1689214062935207 |
-| tiktoken | web | 3.891763019061671 | 1078596.119244086 | 0.0482285938460336 |
-| tiktoken_cached | code | 2.782343231865716 | 649222.7985644138 | 0.7399565627338234 |
+| tiktoken_cached | technical | 6.376365956809692 | 1290529.145360713 | 0.2312619541044114 |
+| tiktoken | technical | 6.291333413663785 | 1273319.1897249734 | 0.2343800001654017 |
+| tiktoken | english | 5.137940945588106 | 1267727.9277666814 | 0.1387139845519414 |
+| tiktoken_cached | code | 5.133743281579646 | 1219410.2639649643 | 0.4308817969103984 |
+| tiktoken_cached | english | 4.98460850642769 | 1229894.9091674387 | 0.1431261719517351 |
 
 ### Exactness
 
@@ -52,9 +52,24 @@ Byte Pair Encoding combines pre-tokenization with iterative merge logic to map t
 | tiktoken_cached | technical | 1.0 |
 | tiktoken_cached | web | 1.0 |
 
+### Direct Comparison: `tiktoken` vs `tiktoken_cached`
+
+| tokenizer | domain | mb_per_s | tokens_per_s | avg_latency_ms | peak_memory_bytes | exact_match_rate |
+| --- | --- | --- | --- | --- | --- | --- |
+| tiktoken | code | 4.731345113298107 | 1123829.23669314 | 0.4681530470861617 | 370000.8 | nan |
+| tiktoken | english | 5.137940945588106 | 1267727.9277666814 | 0.1387139845519414 | 46248.0 | nan |
+| tiktoken | technical | 6.291333413663785 | 1273319.1897249734 | 0.2343800001654017 | 35843.8 | nan |
+| tiktoken | web | 4.509071481018413 | 1181075.777731079 | 0.0518363277024036 | 31697.6 | nan |
+| tiktoken_cached | code | 5.133743281579646 | 1219410.2639649643 | 0.4308817969103984 | 4470460.0 | 1.0 |
+| tiktoken_cached | english | 4.98460850642769 | 1229894.9091674387 | 0.1431261719517351 | 1456340.0 | 1.0 |
+| tiktoken_cached | technical | 6.376365956809692 | 1290529.145360713 | 0.2312619541044114 | 2472672.0 | 1.0 |
+| tiktoken_cached | web | 4.516598645626086 | 1183047.3924705086 | 0.0517535152994241 | 536444.0 | 1.0 |
+
 ## Discussion
 
 The main result should be interpreted jointly across throughput, latency spread, and memory usage. Domain-specific slowdowns are expected because code, noisy text, and markdown drive different pre-tokenization behavior and token boundary density. The cached prototype is designed to help repeated-token workloads and should be evaluated against its memory overhead and hit rate.
+
+The exact-compatible result is now more concrete: `tiktoken_cached` preserves `tiktoken` token IDs exactly on the benchmark corpus. Its mean throughput was 5.253 MB/s versus 5.167 MB/s for `tiktoken`. The speed advantage is modest, while memory usage is dramatically higher, so the right interpretation is a tradeoff rather than a free optimization.
 
 ## Proposed Solution
 
@@ -63,10 +78,10 @@ The optimized tokenizer adds a repeated-substring cache on top of a simple Pytho
 ## Limitations
 
 - Results are hardware- and Python-runtime-specific.
-- Synthetic corpora are used when real datasets are absent.
+- Real fetched corpora are more representative than the synthetic fallback, but they are still a sampled benchmark corpus rather than a complete production distribution.
 - Non-compatible vocabularies cannot be judged on exact token ID equality.
-- The custom Python tokenizers are research baselines, not production Rust or C++ systems.
+- The exact-compatible cached tokenizer is implemented in Python around `tiktoken` internals, so it is not yet a fair substitute for a lower-level native optimization.
 
 ## Conclusion
 
-FastBPE provides a reproducible framework for answering when faster exact tokenization is possible, which domains stress tokenizer implementations most, and how caching changes the speed-memory tradeoff.
+FastBPE now shows two distinct outcomes: exact token-ID compatibility can be preserved in an optimized path, and with a document-first caching strategy that path can slightly outperform native `tiktoken` on this benchmark. The cost is much higher memory usage, so the benchmark’s main value is in clarifying when that tradeoff might or might not be worth it.
